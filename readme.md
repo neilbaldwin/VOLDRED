@@ -170,7 +170,7 @@ To enable linked editing tap on the LINK icon to the right of the Layer name. It
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
 
->[!tip]
+>[!important]
 >**Linked and Synched Layer Editing**
 >
 > There are two different modes of the linked Layer editing. I call them *Linked* and *Synced*.
@@ -191,7 +191,7 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 
 *Synced Layer Editing* should be fairly familiar as it behaves in the same way as editing the two Layers simultaneously on the VD (Layer 1+2 mode). However *Linked Layer Editing* might not be so obvious:
 
->[!example]
+>[!tip]
 >**Linked Layer Editing**
 >
 >Let's say  Layer 1 Level is set to 100 and Layer 2 Level is set to 50. If you enable the LINK button on Layer 1 (and LINK on Layer 2 is disabled) then you'll be editing in *Linked Mode*.
@@ -277,7 +277,7 @@ The `[X]` button closes the window. The small keyboard-looking icon at the top-r
 
 ![](img/Mini%20Keyboard.webp)
 
->[!question]
+>[!important]
 >The Volca Drum does not respond to MIDI note numbers in Key-On messages. The Pitch Input keyboard works by directly setting the Oscillator Pitch parameter so just be aware that it will modify the currently selected Part.
 
 OK so this one will take a little more explaining than the Drum Pad/Triggers mode. It was also one of my favourite VOLDRED features to realise!
@@ -288,7 +288,8 @@ The small drum pad icon at the top-right will take you back to the *Drum Pad* mo
 #### Keyboard
 The *keyboard* is just over 1 octave of touch pads (16 in total) starting at C and ending an octave-and-a-bit above at D#/Eb. The nearer to the bottom edge you tap, the higher the velocity.
 
->[!tip] Remember that the Volca Drum has two pitch modes: unquantised and quantised. To get proper musical semi-tone intervals on the keyboard you need to be in quantised mode by enabling the Q button above the Pitch slider. You can use the keyboard in either mode though, of course.
+>[!tip]
+>Remember that the Volca Drum has two pitch modes: unquantised and quantised. To get proper musical semi-tone intervals on the keyboard you need to be in quantised mode by enabling the Q button above the Pitch slider. You can use the keyboard in either mode though, of course.
 #### TRG (trigger)
 This toggle-button controls whether the current Part is triggered as you tap the keys on the keyboard. Handy if you're modifying a Part with the sequencer running, for example, so that you can change the pitch without repeatedly triggering the sound.
 #### OCT (octave)
@@ -296,12 +297,15 @@ You can change the current octave of the keyboard. The current octave is display
 #### LYR (layer)
 This radio-button toggles the target Layer between Layer 1 and Layer 2.  You might only want to affect the pitch of a single Layer so this is how you do it.
 
->[!success] The keyboard also respects the `LINK` buttons in the Layers. If you have `LINK` on for Layer 1 and use the keyboard to send pitch information to Layer 1, the pitch of Layer 2 will also be affected *relative* to its original relationship to Layer 1. If `LINK` is on for both Layers, the same pitch will be sent to both Layers. Exactly the same way as editing parameters or using `RAND` and `INIT` functions. Super handy if you're trying to set specific intervals between the two Layers.
+>[!tip]
+>The keyboard also respects the `LINK` buttons in the Layers. If you have `LINK` on for Layer 1 and use the keyboard to send pitch information to Layer 1, the pitch of Layer 2 will also be affected *relative* to its original relationship to Layer 1. If `LINK` is on for both Layers, the same pitch will be sent to both Layers. Exactly the same way as editing parameters or using `RAND` and `INIT` functions. Super handy if you're trying to set specific intervals between the two Layers.
 
 #### How Does It Work?
 As per the comment above, the Volca Drum *does not respond to MIDI note numbers* so you have no *normal* way of triggering the sounds in a *pitched* or *melodic* way. The way the mini keyboard works in VOLDRED is by sending MIDI CC values for the Oscillator Pitch and then (optionally) triggering the currently selected Part to mimic MIDI Key-On message. It isn't perfect. The main quirk is there is some unfathomable lag or slew when you change the Oscillator Pitch parameter so it always sounds like it has some degree of pitch gliding. The other unavoidable *problem* is that in order to work it has to modify the current Part.
 
->[!example] Example
+>[!tip]
+>**Synchronised Editing Example**
+>
 >Let's say you wanted a melodic Part with the pitch of the two oscillators set a fifth (7 semitones) apart.
 >
 >Start off by initialising the two Layers of the current Part. You can either tap the `INIT` button in both parts or just use Layer 1 and enable its LINK button. For the sake of this example, enable `LY`, `FX` and `WG` before pressing `INIT` so that we have a simple, clean sound to demonstrate.
@@ -323,14 +327,17 @@ If you tap-and-hold anywhere in the big empty part at the top, between the two i
 ![](img/Drum%20Drag.png)
 
 
->[!warning] A Clever Hack!
+>[!warning]
+>**A Clever Hack!**
+>
 >Without going into too much explanation, you can't *really* do this in Touch OSC. You can only really move objects around when you're in Edit mode. But that's no use in this case as when you're in Edit mode you can't *use* the keyboard.
 >
 >So the window-dragging is a big hack I came up with. A clever hack but a hack all the same. 
 >
 >Because of this there is an annoying *quirk* where you're able to drag your touch/mouse pointer outside of the window when dragging and it will stop moving the window and touch/press the control that's directly under where your finger/mouse left the window. I haven't figured out a way to fix it so my advice to you is thus: don't try to drag the window around really quickly and be deliberate about where you tap-and-drag to reduce the risk of the "pop out" bug.
 
->[!note] If the keyboard window is open and you switch to the SETTING tab, the window will be closed.
+>[!note]
+>If the keyboard window is open and you switch to the SETTING tab, the window will be closed.
 
 ---
 ## Loading and Saving Kits

@@ -51,7 +51,7 @@ Below the Part Selector are two identical groups of controls that contain the pa
 
 Here you can see *Oscillator Level*, *Oscillator Shape*, *Oscillator Pitch* etc. for Layer 1. The controls for Layer 2 are identical.
 
-The cluster of buttons below the Oscillator Level radial control various options and modes for linked editing and randomisation.  See [Layers: Linked Editing](<#Layers Linked Editing>) and [Randomisation and Initialisation](<#Randomisation and Initialisation>) for more details.
+The cluster of buttons below the Oscillator Level radial control various options and modes for linked editing and randomisation.  See [Layers: Linked Editing](#layers-linked-editing) and [Randomisation and Initialisation](#randomisation-and-initialisation) for more details.
 ### Part FX and Waveguide
 
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
@@ -82,7 +82,7 @@ Immediately below the Load/Save section is the controls to copy parameter settin
 
 ![](<img/Copy Parts.png>)
 
-For more details see [Copying Parts](<#Copying Parts>)
+For more details see [Copying Parts](#copying-parts)
 #### UI Colour Settings
 
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)

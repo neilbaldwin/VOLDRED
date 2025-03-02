@@ -42,6 +42,7 @@ Below the Part Selector is a heading strip showing you the different sections of
 
 >[!tip] 
 >Switching Parts in VOLDRED does not change the selected Part on the VD.
+
 ### Layer Controls
 
 Below the Part Selector are two identical groups of controls that contain the parameters for Layer 1 and Layer 2 of the currently selected Part.
@@ -55,7 +56,7 @@ The cluster of buttons below the Oscillator Level radial control various options
 
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
 
-![|](<img/FX and Waveguide.png>)
+![](<img/FX and Waveguide.png>)
 
 >[!tip]
 >On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.
@@ -67,13 +68,14 @@ The last tab in the Part Selector takes you to the Settings page:
 ![](<img/Settings.png>)
 
 Here you can load/save kits, copy parameters between Parts, change the UI colours and set various other parameters.
+
 #### Loading and Saving
 
 ![](<img/Load and Save.png>)
 
 The top section is where you can load and save kits to one of 16 slots, which are saved when you save VOLDRED's Touch OSC project file. For more details see "Loading And Saving Kits"
 
-It's also possible to recall kits via MIDI control. See [Loading Kits Via MIDI](<#Loading Kits Via MIDI>) for an explanation.
+It's also possible to recall kits via MIDI control. See [Loading Kits Via MIDI](#loading-kits-via-midi) for an explanation.
 #### Copy Parts
 
 Immediately below the Load/Save section is the controls to copy parameter settings between Parts of the current kit.
@@ -83,7 +85,7 @@ Immediately below the Load/Save section is the controls to copy parameter settin
 For more details see [Copying Parts](<#Copying Parts>)
 #### UI Colour Settings
 
-At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](<#Changing the UI Colours>)
+At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)
 
 ![](<img/UI Colours.png>)
 
@@ -103,7 +105,7 @@ Load VOLDRED into Touch OSC and in the Connections window make sure you have a M
 >* Tap key 1 on your Volca Drum so you can hear the sound.
 >* Switch to Part 1 in VOLDRED. Use the *Oscillator Level* radial to turn up the volume of Part 1.
 >* Then trying moving the *Oscillator Pitch* slider up and down. You should hear the pitch change as you're tapping the Part 1 key on the VD.
->* If you can't hear the pitch change it's most likely an issue with your MIDI Connection in Touch OSC. Double-check your MIDI settings and if you still can't get it to work then drop me a line - see the [Roundup](<#Roundup>) section at the bottom of this document for contact link.
+>* If you can't hear the pitch change it's most likely an issue with your MIDI Connection in Touch OSC. Double-check your MIDI settings and if you still can't get it to work then drop me a line - see the [Roundup](<#roundup>) section at the bottom of this document for contact link.
 
 ## Editing Layer Parameters
 
@@ -194,7 +196,7 @@ Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
 You'll notice above the slider that controls Oscillator Pitch, there is a toggle button labelled "Q"
 
-![|181](<img/Pitch Q.png>)
+![](<img/Pitch Q.png>)
 
 This is to enable or disable the Volca's pitch quantisation. When disabled the oscillator pitch isn't quantised. When enabled the pitch is quantised to semi-tone intervals.
 

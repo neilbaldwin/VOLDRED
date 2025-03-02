@@ -49,7 +49,7 @@ You'll need a Volca Drum. Buy one or borrow one: it's easily one of the best of 
 
 You'll also need Touch OSC, and a device to run it on. And some sort of MIDI device. And a MIDI cable. You know the score.
 
->[!info]
+>[!tip]
 You have to pay for Touch OSC on mobile devices but **you can download it for a free, unrestricted trial** on desktop computers. The mobile version is about $15.
 
 If you don't already own [Touch OSC](https://hexler.net/touchosc) I can't express strongly enough how good it is. Plus, the developers, Hexler, are hardworking independent artists in their own right and these kind of people benefit from our support where we can. I am in no way affiliated to them or paid by them: they just make really good stuff for audio and visual artists.
@@ -81,7 +81,7 @@ Across the top of the UI is the *Part Selector*.  Here you can quickly switch be
 
 Below the Part Selector is a heading strip showing you the different sections of each Layer etc. It doesn't do anything clever apart from give you a visual indicator of the various parameter groups.
 
->[!info] 
+>[!tip] 
 >Switching Parts in VOLDRED does not change the selected Part on the VD.
 ### Layer Controls
 
@@ -98,7 +98,7 @@ To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Wavegui
 
 ![|154](img/FX%20and%20Waveguide.png)
 
->[!info]
+>[!tip]
 >On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.
 
 ### Settings Tab
@@ -133,7 +133,7 @@ At the bottom left is where you can change the hue, saturation, lightness of the
 
 Load VOLDRED into Touch OSC and in the Connections window make sure you have a MIDI output configured to send MIDI to your Volca Drum. VOLDRED sends all of the parameter changes via MIDI messages (from the Lua scripting). It does not use OSC.
 
->[!info]
+>[!tip]
 >By default, VOLDRED sends MIDI to all enabled Touch OSC MIDI Connections.
 
 >[!important]
@@ -154,7 +154,7 @@ Load VOLDRED into Touch OSC and in the Connections window make sure you have a M
 
 The parameters in Layer 1 and Layer 2 should be pretty obvious as they correspond to the same settings/controls on the Volca Drum hardware.
 
->[!info]
+>[!tip]
 >When you touch or move a control, it's name will be temporarily replaced with the current value of that control.
 
 >[!tip]
@@ -170,7 +170,7 @@ To enable linked editing tap on the LINK icon to the right of the Layer name. It
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
 
->[!info]
+>[!tip]
 >**Linked and Synched Layer Editing**
 >
 > There are two different modes of the linked Layer editing. I call them *Linked* and *Synced*.
@@ -202,7 +202,7 @@ The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used
 
 ![](img/Link.webp)
 
->[!info]
+>[!tip]
 >**Randomisation and Initialisation Modes**
 >
 >`LY` : If `LY` is enabled, when you press `RAND` or `INIT`, all the Layer parameters of the current Part will be affected.

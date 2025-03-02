@@ -6,6 +6,12 @@ VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and 
 
 ## Index
 
+* Item 1
+* Item 2
+* * Item 3
+  * Item 4
+ 
+
 [Requirements](#Requirements)
 [Why Do I Need VOLDRED?](#Why%20Do%20I%20Need%20VOLDRED?)
 [UI Walkthrough](#UI%20Walkthrough)

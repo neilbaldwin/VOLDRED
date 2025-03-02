@@ -176,11 +176,15 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 > There are two different modes of the linked Layer editing. I call them *Linked* and *Synced*.
 > 
 > **Synced Layer Editing**
+> 
 > *When both of the two Layer Link buttons are active you are editing in Synced Mode*.
+> 
 > Any changes you make to the Layer that has LINK enabled will be *mirrored* to the other Layer. This works similar to when you have "LAYER 1+2" selected on the VD. Moving a control on either Layer will set the parameter on the other Layer to the same value.
 > 
 > **Linked Layer Editing**
-> *When only one of the Layer Link buttons is active you are editing in Linked Mode*.*
+> 
+> *When only one of the Layer Link buttons is active you are editing in Linked Mode.*
+> 
 > Any changes you make to the Layer that has LINK enabled will affect the other layer but instead of setting the parameter of both Layers to the same value, in this mode the relative numerical relationship between the two layers' parameters is maintained for as long as you're touching the control. See below for an example.
 > 
 > Also when only one Layer Link button is active, the Layer that doesn't have LINK enabled will not affect then other Layer when you change the parameters.

@@ -36,7 +36,7 @@ VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
 
 ![](<img/Part Selection.png>)
 
-Across the top of the UI is the *Part Selector*.  Here you can quickly switch between Parts for editing by just tapping on a tab. This is also where you can access various settings and functions such as  [Loading and Saving Kits](<#Loading and Saving Kits>) via the [Settings Tab](<#Settings Tab>)
+Across the top of the UI is the *Part Selector*.  Here you can quickly switch between Parts for editing by just tapping on a tab. This is also where you can access various settings and functions such as  [Loading and Saving Kits](#loading-and-saving-kits) via the [Settings Tab](#settings-tab)
 
 Below the Part Selector is a heading strip showing you the different sections of each Layer etc. It doesn't do anything clever apart from give you a visual indicator of the various parameter groups.
 

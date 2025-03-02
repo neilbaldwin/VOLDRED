@@ -46,7 +46,7 @@ Below the Part Selector is a heading strip showing you the different sections of
 
 Below the Part Selector are two identical groups of controls that contain the parameters for Layer 1 and Layer 2 of the currently selected Part.
 
-![](<Layer.png>)
+![](<img/Layer.png>)
 
 Here you can see *Oscillator Level*, *Oscillator Shape*, *Oscillator Pitch* etc. for Layer 1. The controls for Layer 2 are identical.
 
@@ -55,7 +55,7 @@ The cluster of buttons below the Oscillator Level radial control various options
 
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
 
-![|154](<FX and Waveguide.png>)
+![|](<img/FX and Waveguide.png>)
 
 >[!tip]
 >On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.
@@ -64,12 +64,12 @@ To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Wavegui
 
 The last tab in the Part Selector takes you to the Settings page:
 
-![](<Settings.png>)
+![](<img/Settings.png>)
 
 Here you can load/save kits, copy parameters between Parts, change the UI colours and set various other parameters.
 #### Loading and Saving
 
-![](<Load and Save.png>)
+![](<img/Load and Save.png>)
 
 The top section is where you can load and save kits to one of 16 slots, which are saved when you save VOLDRED's Touch OSC project file. For more details see "Loading And Saving Kits"
 
@@ -78,14 +78,14 @@ It's also possible to recall kits via MIDI control. See [Loading Kits Via MIDI](
 
 Immediately below the Load/Save section is the controls to copy parameter settings between Parts of the current kit.
 
-![](<Copy Parts.png>)
+![](<img/Copy Parts.png>)
 
 For more details see [Copying Parts](<#Copying Parts>)
 #### UI Colour Settings
 
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](<#Changing the UI Colours>)
 
-![](<UI Colours.png>)
+![](<img/UI Colours.png>)
 
 ## Setting Up and Getting Started
 
@@ -107,7 +107,7 @@ Load VOLDRED into Touch OSC and in the Connections window make sure you have a M
 
 ## Editing Layer Parameters
 
-![](<Layer.png>)
+![](<img/Layer.png>)
 
 The parameters in Layer 1 and Layer 2 should be pretty obvious as they correspond to the same settings/controls on the Volca Drum hardware.
 
@@ -123,7 +123,8 @@ The cluster of buttons below Oscillator Level won't be so obvious. They control 
 The default editing mode lets you edit each Layer independently. However the Layers can be *linked* while editing meaning when you change parameters on one Layer, the parameter(s) on the other Layer will also be affected.
 
 To enable linked editing tap on the LINK icon to the right of the Layer name. It will turn red when active.
-![](<Link.webp>)
+
+![](<img/Link.webp>)
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
 
@@ -161,7 +162,7 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 
 The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used to randomise and initialise parameters respectively. Exactly how and what the `RAND` and `INIT` buttons affect depends on the three toggle buttons above them: `LY`, `FX` and `WG`
 
-![](<Link.webp>)
+![](<img/Link.webp>)
 
 >[!tip]
 >**Randomisation and Initialisation Modes**
@@ -187,13 +188,13 @@ There is a *hidden* feature (read: not so obvious from the UI) that enables you 
 
 Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
-![](<Locked.png>)
+![](<img/Locked.png>)
 
 ### PITCH and Q
 
 You'll notice above the slider that controls Oscillator Pitch, there is a toggle button labelled "Q"
 
-![|181](<Pitch Q.png>)
+![|181](<img/Pitch Q.png>)
 
 This is to enable or disable the Volca's pitch quantisation. When disabled the oscillator pitch isn't quantised. When enabled the pitch is quantised to semi-tone intervals.
 
@@ -201,7 +202,7 @@ In Korg's wisdom they gave us just one Pitch Q control per Part so if you enable
 
 ## FX and Waveguide
 
-![](<FX and Waveguide.png>)
+![](<img/FX and Waveguide.png>)
 
 #### FX
 Both Layers in a Part share the parameters in the FX section. These are *Pan*, *Bit Crush*, *Fold*, *Drive*, *Dry Gain* and *Send* (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
@@ -215,12 +216,12 @@ The Waveguide is shown on each Part's display but if you change any of the Waveg
 
 VOLDRED includes a *secret* Drum Pads and Mini Keyboard window. To open and close it, tap on the small square icon to the left of the OSCILLATOR heading.
 
-![](<Part Selection.png>)
+![](<img/Part Selection.png>)
 
 The window is a dual-function window so its appearance will depend on the last time you used it. It will either be in Drum Pad or Mini Keyboard mode.
 ### Drum Pads (Triggers)
 
-![](<Drum Pads.png>)
+![](<img/Drum Pads.png>)
 
 In this mode, tapping on each of the pads, P-1 to P-6 will trigger the sound on those Parts (tracks) on the Volca Drum.
 
@@ -229,7 +230,7 @@ Velocity is mapped to the position you tap on the pad: maximum velocity is in th
 The `[X]` button closes the window. The small keyboard-looking icon at the top-right switches to the *Mini Keyboard* mode.
 ### Mini Keyboard (Pitch)
 
-![](<Mini Keyboard.webp>)
+![](<img/Mini Keyboard.webp>)
 
 >[!important]
 >The Volca Drum does not respond to MIDI note numbers in Key-On messages. The Pitch Input keyboard works by directly setting the Oscillator Pitch parameter so just be aware that it will modify the currently selected Part.
@@ -278,7 +279,7 @@ I know what you're thinking: sure, that little keyboard thing is handy but it of
 
 If you tap-and-hold anywhere in the big empty part at the top, between the two icons, you can drag the window around and place it somewhere out of the way when you're editing parameters but still want to be able to trigger the Parts or play the Volca via the mini-keyboard.
 
-![](<Drum Drag.png>)
+![](<img/Drum Drag.png>)
 
 
 >[!tip]
@@ -308,7 +309,7 @@ The other thing to bear in mind is loading and saving PRGs on the VD. When you c
 
 With all that out of the way you'll be reassured to know that actually loading and saving inside VOLDRED is fast, convenient and intuitive. To access loading and saving go to the SETTINGS tab.
 
-![](<Load and Save.png>)
+![](<img/Load and Save.png>)
 #### Slots
 The 16 numbered boxes across the display are your kit *slots*. To *load* one just tap it. It will load pretty instantly and you'll get a message in the status box (the text box above) telling you it loaded.
 
@@ -322,7 +323,7 @@ It's also possible to recall Kits using MIDI control. Sending a Program Change m
 
 ## Copying Parts
 
-![](<Copy Parts.png>)
+![](<img/Copy Parts.png>)
 
 This should be fairly self-explanatory. You select the source Part on the left and the destination Part on the right then tap `COPY` to copy the parameters from one to the other.
 
@@ -338,7 +339,7 @@ It should be obvious but you can select any combination of `L1`, `L2` and `FX` t
 
 ## Changing the UI Colours
 
-![](<UI Colours.png>)
+![](<img/UI Colours.png>)
 
 On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLDRED.
 
@@ -346,15 +347,15 @@ The section on the left, `UI ELEMENTS`, is just a bunch of dummy objects so you 
 
 On the right are four sliders, H (hue), S (saturation), L (lightness) and A (background alpha). Slide these around until you get your perfect colour scheme!
 
-![](<Colour 1.png>)
+![](<img/Colour 1.png>)
 
-![](<Colour 2.png>)
+![](<img/Colour 2.png>)
 
-![](<Colour 3.png>)
+![](<img/Colour 3.png>)
 
 ## Miscellaneous Options
 
-![](<Misc Options.png>)
+![](<img/Misc Options.png>)
 
 These may change in future updates (added to) but currently there's just two options:
 #### Load Kit 01 at Launch

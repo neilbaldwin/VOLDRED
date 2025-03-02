@@ -49,9 +49,8 @@ You'll need a Volca Drum. Buy one or borrow one: it's easily one of the best of 
 
 You'll also need Touch OSC, and a device to run it on. And some sort of MIDI device. And a MIDI cable. You know the score.
 
-> [!NOTE]
-> Touch OSC
-> You have to pay for Touch OSC on mobile devices but **you can download it for a free, unrestricted trial** on desktop computers. The mobile version is about $15.
+>[!info]
+You have to pay for Touch OSC on mobile devices but **you can download it for a free, unrestricted trial** on desktop computers. The mobile version is about $15.
 
 If you don't already own [Touch OSC](https://hexler.net/touchosc) I can't express strongly enough how good it is. Plus, the developers, Hexler, are hardworking independent artists in their own right and these kind of people benefit from our support where we can. I am in no way affiliated to them or paid by them: they just make really good stuff for audio and visual artists.
 
@@ -76,18 +75,19 @@ VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
 
 ### Part Selector
 
-![](Part%20Selection.png)
+![](img/Part%20Selection.png)
 
 Across the top of the UI is the *Part Selector*.  Here you can quickly switch between Parts for editing by just tapping on a tab. This is also where you can access various settings and functions such as  [Loading and Saving Kits](#Loading%20and%20Saving%20Kits) via the [Settings Tab](#Settings%20Tab)
 
 Below the Part Selector is a heading strip showing you the different sections of each Layer etc. It doesn't do anything clever apart from give you a visual indicator of the various parameter groups.
 
->[!info] Note: Switching Parts in VOLDRED does not change the selected Part on the VD.
+>[!info] 
+>Switching Parts in VOLDRED does not change the selected Part on the VD.
 ### Layer Controls
 
 Below the Part Selector are two identical groups of controls that contain the parameters for Layer 1 and Layer 2 of the currently selected Part.
 
-![](Layer.png)
+![](img/Layer.png)
 
 Here you can see *Oscillator Level*, *Oscillator Shape*, *Oscillator Pitch* etc. for Layer 1. The controls for Layer 2 are identical.
 
@@ -96,20 +96,21 @@ The cluster of buttons below the Oscillator Level radial control various options
 
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
 
-![|154](FX%20and%20Waveguide.png)
+![|154](img/FX%20and%20Waveguide.png)
 
->[!info] On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.
+>[!info]
+>On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.
 
 ### Settings Tab
 
 The last tab in the Part Selector takes you to the Settings page:
 
-![](Settings.png)
+![](img/Settings.png)
 
 Here you can load/save kits, copy parameters between Parts, change the UI colours and set various other parameters.
 #### Loading and Saving
 
-![](Load%20and%20Save.png)
+![](img/Load%20and%20Save.png)
 
 The top section is where you can load and save kits to one of 16 slots, which are saved when you save VOLDRED's Touch OSC project file. For more details see "Loading And Saving Kits"
 
@@ -118,25 +119,28 @@ It's also possible to recall kits via MIDI control. See [Loading Kits Via MIDI](
 
 Immediately below the Load/Save section is the controls to copy parameter settings between Parts of the current kit.
 
-![](Copy%20Parts.png)
+![](img/Copy%20Parts.png)
 
 For more details see [Copying Parts](Projects/Touch%20OSC/Volca/VOLDRED/readme.md#Copying%20Parts)
 #### UI Colour Settings
 
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#Changing%20the%20UI%20Colours)
 
-![](UI%20Colours.png)
+![](img/UI%20Colours.png)
 
 ---
 ## Setting Up and Getting Started
 
 Load VOLDRED into Touch OSC and in the Connections window make sure you have a MIDI output configured to send MIDI to your Volca Drum. VOLDRED sends all of the parameter changes via MIDI messages (from the Lua scripting). It does not use OSC.
 
->[!info] By default, VOLDRED sends MIDI to all enabled Touch OSC MIDI Connections.
+>[!info]
+>By default, VOLDRED sends MIDI to all enabled Touch OSC MIDI Connections.
 
->[!warning] Your Volca Drum must be in the default MIDI mode where the Parts are split across MIDI channels 1-6. VOLDRED won't work if your Volca Drum is in the single-channel mode.
+>[!important]
+>Your Volca Drum must be in the default MIDI mode where the Parts are split across MIDI channels 1-6. VOLDRED won't work if your Volca Drum is in the single-channel mode.
 
->[!example] Check Everything Is Working
+>[!tip]
+>First make sure everything is working:
 >* Toggle the editor mode in Touch OSC so that you're in controller mode.
 >* Tap key 1 on your Volca Drum so you can hear the sound.
 >* Switch to Part 1 in VOLDRED. Use the *Oscillator Level* radial to turn up the volume of Part 1.
@@ -146,13 +150,15 @@ Load VOLDRED into Touch OSC and in the Connections window make sure you have a M
 ---
 ## Editing Layer Parameters
 
-![](Layer.png)
+![](img/Layer.png)
 
 The parameters in Layer 1 and Layer 2 should be pretty obvious as they correspond to the same settings/controls on the Volca Drum hardware.
 
->[!info] When you touch or move a control, it's name will be temporarily replaced with the current value of that control.
+>[!info]
+>When you touch or move a control, it's name will be temporarily replaced with the current value of that control.
 
->[!tip] Instead of having to use the Select knob on the Volca to scroll through all the combinations of *Oscillator Shape*, *Modulation Type* and *Envelope Shape*, you can just use the individual radio buttons to change those parameters directly!
+>[!tip]
+>Instead of having to use the Select knob on the Volca to scroll through all the combinations of *Oscillator Shape*, *Modulation Type* and *Envelope Shape*, you can just use the individual radio buttons to change those parameters directly!
 
 The cluster of buttons below Oscillator Level won't be so obvious. They control the editing mode and also options for randomisation and initialisation of parameters.
 #### Layers: Linked Editing
@@ -160,26 +166,30 @@ The cluster of buttons below Oscillator Level won't be so obvious. They control 
 The default editing mode lets you edit each Layer independently. However the Layers can be *linked* while editing meaning when you change parameters on one Layer, the parameter(s) on the other Layer will also be affected.
 
 To enable linked editing tap on the LINK icon to the right of the Layer name. It will turn red when active.
-![](Link.webp)
+![](img/Link.webp)
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
 
->[!info] Linked and Synched Layer Editing
+>[!info]
+>**Linked and Synched Layer Editing**
+>
 > There are two different modes of the linked Layer editing. I call them *Linked* and *Synced*.
 > 
-> *Synced Layer Editing*
-> ==**When both of the two Layer Link buttons are active you are editing in *Synced Mode***==.
+> **Synced Layer Editing**
+> *When both of the two Layer Link buttons are active you are editing in Synced Mode*.
 > Any changes you make to the Layer that has LINK enabled will be *mirrored* to the other Layer. This works similar to when you have "LAYER 1+2" selected on the VD. Moving a control on either Layer will set the parameter on the other Layer to the same value.
 > 
-> *Linked Layer Editing*
-> ==**When only one of the Layer Link buttons is active you are editing in *Linked Mode*.**==
+> **Linked Layer Editing**
+> *When only one of the Layer Link buttons is active you are editing in Linked Mode*.*
 > Any changes you make to the Layer that has LINK enabled will affect the other layer but instead of setting the parameter of both Layers to the same value, in this mode the relative numerical relationship between the two layers' parameters is maintained for as long as you're touching the control. See below for an example.
 > 
 > Also when only one Layer Link button is active, the Layer that doesn't have LINK enabled will not affect then other Layer when you change the parameters.
 
 *Synced Layer Editing* should be fairly familiar as it behaves in the same way as editing the two Layers simultaneously on the VD (Layer 1+2 mode). However *Linked Layer Editing* might not be so obvious:
 
->[!example] Linked Layer Editing
+>[!example]
+>**Linked Layer Editing**
+>
 >Let's say  Layer 1 Level is set to 100 and Layer 2 Level is set to 50. If you enable the LINK button on Layer 1 (and LINK on Layer 2 is disabled) then you'll be editing in *Linked Mode*.
 >
 >Now move Layer 1 Level control to 75. You'll see that instead of Layer 2 Level also being set to  75, instead it has moved to 25: maintaining the original relationship between the level of each Layer.
@@ -190,9 +200,11 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 
 The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used to randomise and initialise parameters respectively. Exactly how and what the `RAND` and `INIT` buttons affect depends on the three toggle buttons above them: `LY`, `FX` and `WG`
 
-![](Link.webp)
+![](img/Link.webp)
 
->[!info] Randomisation and Initialisation Modes
+>[!info]
+>**Randomisation and Initialisation Modes**
+>
 >`LY` : If `LY` is enabled, when you press `RAND` or `INIT`, all the Layer parameters of the current Part will be affected.
 >
 >`FX` : If `FX` is enabled, when you press `RAND` or `INIT`, only the controls in the FX section will be affected. Note: this includes the Waveguide Send control.
@@ -205,7 +217,8 @@ The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used
 
 Similar to how the *Layer Link* button behaves when manually editing the controls, *Layer Link* also affects randomisation and initialisation. For example if you have LINK enabled on Layer 1 and you press the Layer 1 `RAND` button, the parameters in Layer 2 will also be randomised.
 
->[!note] There isn't a *Linked* and *Synced* mode when using `RAND` or `INIT`. If a Layer Link button is active, it will affect the other Layer by either randomising or initialising it's parameters.
+>[!note]
+>There isn't a *Linked* and *Synced* mode when using `RAND` or `INIT`. If a Layer Link button is active, it will affect the other Layer by either randomising or initialising it's parameters.
 
 ### Locking Parameters from RAND and INIT
 
@@ -213,14 +226,14 @@ There is a *hidden* feature (read: not so obvious from the UI) that enables you 
 
 Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
-![](Locked.png)
+![](img/Locked.png)
 
 ---
 ### PITCH and Q
 
 You'll notice above the slider that controls Oscillator Pitch, there is a toggle button labelled "Q"
 
-![|181](Pitch%20Q.png)
+![|181](img/Pitch%20Q.png)
 
 This is to enable or disable the Volca's pitch quantisation. When disabled the oscillator pitch isn't quantised. When enabled the pitch is quantised to semi-tone intervals.
 
@@ -229,7 +242,7 @@ In Korg's wisdom they gave us just one Pitch Q control per Part so if you enable
 ---
 ## FX and Waveguide
 
-![](FX%20and%20Waveguide.png)
+![](img/FX%20and%20Waveguide.png)
 
 #### FX
 Both Layers in a Part share the parameters in the FX section. These are *Pan*, *Bit Crush*, *Fold*, *Drive*, *Dry Gain* and *Send* (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
@@ -244,12 +257,12 @@ The Waveguide is shown on each Part's display but if you change any of the Waveg
 
 VOLDRED includes a *secret* Drum Pads and Mini Keyboard window. To open and close it, tap on the small square icon to the left of the OSCILLATOR heading.
 
-![](Part%20Selection.png)
+![](img/Part%20Selection.png)
 
 The window is a dual-function window so its appearance will depend on the last time you used it. It will either be in Drum Pad or Mini Keyboard mode.
 ### Drum Pads (Triggers)
 
-![](Drum%20Pads.png)
+![](img/Drum%20Pads.png)
 
 In this mode, tapping on each of the pads, P-1 to P-6 will trigger the sound on those Parts (tracks) on the Volca Drum.
 
@@ -258,9 +271,10 @@ Velocity is mapped to the position you tap on the pad: maximum velocity is in th
 The `[X]` button closes the window. The small keyboard-looking icon at the top-right switches to the *Mini Keyboard* mode.
 ### Mini Keyboard (Pitch)
 
-![](Mini%20Keyboard.webp)
+![](img/Mini%20Keyboard.webp)
 
->[!question] The Volca Drum does not respond to MIDI note numbers in Key-On messages. The Pitch Input keyboard works by directly setting the Oscillator Pitch parameter so just be aware that it will modify the currently selected Part.
+>[!question]
+>The Volca Drum does not respond to MIDI note numbers in Key-On messages. The Pitch Input keyboard works by directly setting the Oscillator Pitch parameter so just be aware that it will modify the currently selected Part.
 
 OK so this one will take a little more explaining than the Drum Pad/Triggers mode. It was also one of my favourite VOLDRED features to realise!
 
@@ -302,7 +316,7 @@ I know what you're thinking: sure, that little keyboard thing is handy but it of
 
 If you tap-and-hold anywhere in the big empty part at the top, between the two icons, you can drag the window around and place it somewhere out of the way when you're editing parameters but still want to be able to trigger the Parts or play the Volca via the mini-keyboard.
 
-![](Drum%20Drag.png)
+![](img/Drum%20Drag.png)
 
 
 >[!warning] A Clever Hack!
@@ -330,7 +344,7 @@ The other thing to bear in mind is loading and saving PRGs on the VD. When you c
 
 With all that out of the way you'll be reassured to know that actually loading and saving inside VOLDRED is fast, convenient and intuitive. To access loading and saving go to the SETTINGS tab.
 
-![](Load%20and%20Save.png)
+![](img/Load%20and%20Save.png)
 #### Slots
 The 16 numbered boxes across the display are your kit *slots*. To *load* one just tap it. It will load pretty instantly and you'll get a message in the status box (the text box above) telling you it loaded.
 
@@ -345,7 +359,7 @@ It's also possible to recall Kits using MIDI control. Sending a Program Change m
 ---
 ## Copying Parts
 
-![](Copy%20Parts.png)
+![](img/Copy%20Parts.png)
 
 This should be fairly self-explanatory. You select the source Part on the left and the destination Part on the right then tap `COPY` to copy the parameters from one to the other.
 
@@ -362,7 +376,7 @@ It should be obvious but you can select any combination of `L1`, `L2` and `FX` t
 ---
 ## Changing the UI Colours
 
-![](UI%20Colours.png)
+![](img/UI%20Colours.png)
 
 On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLDRED.
 
@@ -370,16 +384,16 @@ The section on the left, `UI ELEMENTS`, is just a bunch of dummy objects so you 
 
 On the right are four sliders, H (hue), S (saturation), L (lightness) and A (background alpha). Slide these around until you get your perfect colour scheme!
 
-![](Colour%201.png)
+![](img/Colour%201.png)
 
-![](Colour%202.png)
+![](img/Colour%202.png)
 
-![](Colour%203.png)
+![](img/Colour%203.png)
 
 ---
 ## Miscellaneous Options
 
-![](Misc%20Options.png)
+![](img/Misc%20Options.png)
 
 These may change in future updates (added to) but currently there's just two options:
 #### Load Kit 01 at Launch
@@ -402,6 +416,3 @@ Due to the nature of Touch OSC files and the Lua scripting you can freely poke a
 If you've any questions or issues or suggestions, drop me a line at info@marmotaudio.co.uk
 
 Neil
-
-
-

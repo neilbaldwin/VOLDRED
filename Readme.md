@@ -2,7 +2,7 @@
 
 VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and convenience to your editing experience and has a ton of tricks up its sleeve to transform the sound designing process on the Volca Drum.
 
-![](<VOLDRED UI.png>)
+![](<img/VOLDRED UI.png>)
 
 ## Requirements
 
@@ -34,7 +34,7 @@ VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
 
 ### Part Selector
 
-![](<Part Selection.png>)
+![](<img/Part Selection.png>)
 
 Across the top of the UI is the *Part Selector*.  Here you can quickly switch between Parts for editing by just tapping on a tab. This is also where you can access various settings and functions such as  [Loading and Saving Kits](<#Loading and Saving Kits>) via the [Settings Tab](<#Settings Tab>)
 

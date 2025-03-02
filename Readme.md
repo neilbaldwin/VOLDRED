@@ -6,13 +6,38 @@ VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and 
 
 ## Index
 
-- [Requirements](#requirements)
-- [Why Do I Need VOLDRED?](#why-do-i-need-voldred)
-- [UI Walkthrough](#ui-walkthrough)
-- - [Part Selector](#part-selector)
-- - [Layer Controls](#layer-controls)
-
-
+* [Requirements](#requirements)
+* [Why Do I Need VOLDRED?](#why-do-i-need-voldred)
+* [UI Walkthrough](#ui-walkthrough)
+* * [Part Selector](#part-selector)
+* * [Layer Controls](#layer-controls)
+* * [Part Fx and Waveguide](#part-fx-and-waveguide)
+* * [Settings](#settings-tab)
+* * [Loading and Saving Kits](#loading-and-saving)
+* * [UI Colours](#ui-colour-settings)
+* [Setting Up and Getting Started](#setting-up-and-getting-started)
+* [Editing Layer Parameters](#editing-layer-parameters)
+* [Linked Layer Editing](#layers-linked-editing)
+* [Randomisation and Initialisation](#randomisation-and-initialisation)
+* [Linked Randomisation and Initialisation](#linked-randomisation-and-initialisation)
+* [Pitch and Q](#pitch-and-q)
+* [FX and Waveguide](#fx-and-waveguide)
+* [Drum Pads and Mini-Keyboard](#drum-pads-and-mini-keyboard)
+* * [Drum Pads](#drum-pads-triggers)
+* * [Mini Keyboard](#mini-keyboard-pitch)
+* * * [Keyboard](#keyboard)
+* * * [TRG](#trg-trigger)
+* * * [OCT](#oct-octave)
+* * * [LYR](#lyr-layer)
+* * [How Does It Work?](#how-does-it-work)
+* * [Moving The Pads/Keyboard Window](#wait-theres-more)
+* [Loading and Saving Kits](#loading-and-saving-kits)
+* * [How To Load and Save](#how-to-load-and-save-in-voldred)
+* * [Loading Kits Via MIDI](#loading-kits-via-midi)
+* [Copying Parts](#copying-parts)
+* [Changing the UI Colours](#changing-the-ui-colours)
+* [Misc Options](#miscellaneous-options)
+* [Roundup](#roundup)
 
 ## Requirements
 

@@ -320,6 +320,7 @@ If you tap-and-hold anywhere in the big empty part at the top, between the two i
 
 ![](<img/Drum Drag.png>)
 
+![](<img/moving.gif>)
 
 >[!tip]
 >**A Clever Hack!**

@@ -1,7 +1,5 @@
 ![](<img/logo.png>)
 
-## VOLDRED : Volca Drum Editor by Neil Baldwin, 2025
-
 VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and convenience to your editing experience and has a ton of tricks up its sleeve to transform the sound designing process on the Volca Drum.
 
 ![](<img/VOLDRED UI.png>)

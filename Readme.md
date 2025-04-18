@@ -539,13 +539,22 @@ Go to Sysex Librarian, select a previously exported Kit file and click on the Pl
 
 >[!important]
 >At the date of writing this I haven't found a way to send and receive sysex data from VOLDRED on iPad to another app running on the iPad. I've tried a few but none seem to work.
+>
 >However there is a way to do it via Network MIDI if you have an iPad and a MacOS computer.
+>
 >First setup a MIDI Network session via "Audio MIDI Setup"
+>
 >![](img/MIDI%20Setup%20Network.png)
+>
 >Then create a new session and when your iPad appears select it and click on "Connect"
+>
 >![](img/MIDI%20New%20Network%20Session.png)
+>
 >Then in your sysex librarian (Sysex Librarian here), simply change the MIDI device to the network session you just created:
+>
 >![](img/Sysex%20Librarian%20Network.png)
+>
+>You should now be able to send and receive sysex from VOLDRED as though the devices were physically connected.
 
 ## Changing the UI Colours
 

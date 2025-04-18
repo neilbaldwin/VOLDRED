@@ -150,10 +150,8 @@ For more details see [Sysex Backup and Restore](#sysex-backup-and-restore)
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)
 
 <p align="center">
-  <img src="img/UI Colours.png" width="300"/>
+  <img src="img/UI Colours.png" width="400"/>
 </p>
-
-<img src="img/UI Colours.png" width=75%>
 
 ## Setting Up and Getting Started
 
@@ -262,7 +260,7 @@ There is a *hidden* feature (read: not so obvious from the UI) that enables you 
 Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
 <p align="center">
-  <img src="img/Locked.png" width="200"/>
+  <img src="img/Locked.png" width="400"/>
 </p>
 
 ### PITCH and Q

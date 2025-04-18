@@ -192,7 +192,7 @@ The default editing mode lets you edit each Layer independently. However the Lay
 To enable linked editing tap on the LINK icon to the right of the Layer name. It will turn red when active.
 
 <p align="center">
-  <img src="img/Link.png" width="200"/>
+  <img src="img/Link.png" height="200"/>
 </p>
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:

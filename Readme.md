@@ -371,7 +371,7 @@ The diamond-shaped button at the top-right controls what happens when you move (
 
 Here's where it gets a little weird. Weird is good.
 
->[!example]
+>[!TIP]
 >Let's start off simple. We'll map the Oscillator Level (Part 1, Layer 1) to Macro Control M1. Have Part 1 selected and open the Controller Window and switch to Macros.
 >
 >* First click/press the X on Macro M1 to clear any previous mapping. If the Dial Mode button is on (the diamond button at the top-right), turn it off for the time being

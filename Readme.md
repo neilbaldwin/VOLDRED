@@ -267,7 +267,9 @@ Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
 You'll notice above the slider that controls Oscillator Pitch, there is a toggle button labelled "Q"
 
-![|480](<img/Pitch Q.png>)
+<p align="center">
+  <img src="img/Pitch Q.png" height="150"/>
+</p>
 
 This is to enable or disable the Volca's pitch quantisation (QPI). When disabled the oscillator pitch isn't quantised. When enabled the pitch is quantised to semi-tone intervals.
 
@@ -525,7 +527,7 @@ Go to Sysex Librarian, select a previously exported Kit file and click on the Pl
 ## Changing the UI Colours
 
 <p align="center">
-  <img src="img/UI Colours.png" width="300"/>
+  <img src="img/UI Colours.png" width="480"/>
 </p>
 
 On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLDRED.

@@ -31,12 +31,19 @@ VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and 
 * * * [OCT](#oct-octave)
 * * * [LYR](#lyr-layer)
 * * * [How Does It Work?](#how-does-it-work)
+* * [Macros](#macro-controls)
+* * * [Macro Control Anatomy](#macro-control)
+* * * [Mapping Controls To A Macro](#mapping-parameters-to-macro-controls)
 * * [Moving The Pads/Keyboard Window](#wait-theres-more)
 * [Loading and Saving Kits](#loading-and-saving-kits)
 * * [How To Load and Save](#how-to-load-and-save-in-voldred)
-* * [Loading Kits Via MIDI](#loading-kits-via-midi)
+* * [Switch Kits Via MIDI](#switching-kits-via-midi)
 * [Copying Parts](#copying-parts)
-* [Sysex Backup and Restore](#Sysex%20Backup%20and%20Restore)
+* [Sysex Backup and Restore](#sysex-backup-and-restore)
+* * [Sysex Setup](#sysex-setup)
+* * * [Sysex: How To Use](#sysex-how-to-use)
+* * * [Sysex Sending](#sysex-sending)
+* * * [Sysex Receiving](#sysex-receiving)
 * [Changing the UI Colours](#changing-the-ui-colours)
 * [Misc Options](#miscellaneous-options)
 * [Roundup](#roundup)
@@ -457,6 +464,7 @@ It should be obvious but you can select any combination of `L1`, `L2` and `FX` t
 >The sysex features are a relatively new addition to VOLDRED and have only received minimal testing and usage. Nothing should really *break* but...you know...
 
 As well as storing the 16 kits inside of the the .TOSC file when you save it, I recently added the ability to export and import Kit data from VOLDRED!
+
 ### Sysex Setup
 
 >[!tip]
@@ -477,6 +485,7 @@ As well as storing the 16 kits inside of the the .TOSC file when you save it, I 
 ### Sysex: How To Use
 
 As mentioned above, you'll need some sort of sysex librarian/tool software/app to receive and send the sysex data. I use "Sysex Librarian" on OSX (free) so find one for your own platform/setup. Once you've setup the MIDI connections in Touch OSC as detailed above, actually using the send and receive controls is very straightforward. I'll describe the process in relation to Sysex Librarian but I'm sure other software have a similar method.
+
 #### Sysex Sending
 
 On Sysex Librarian you have to click on "Record One" to engage receiving. Once it's waiting for sysex data, go to VOLDRED and tap on the `[SEND]` button:
@@ -484,6 +493,7 @@ On Sysex Librarian you have to click on "Record One" to engage receiving. Once i
 ![](<img/Sysex.png>)
 
 Your Kit data will be sent to Sysex Librarian and the file will appear in the app's library as an unnamed file. From there you can either leave it in the internal library or export it as a .syx or .mid file. This is useful is you want to send or share your Kit sysex or move it to another device etc.
+
 #### Sysex Receiving
 
 To import a sysex Kit you first need to engage the `[RECEIVE]` button. When VOLDRED is waiting for sysex data the receive button will be coloured red.
@@ -494,8 +504,6 @@ Go to Sysex Librarian, select a previously exported Kit file and click on the Pl
 
 >[!note]
 >After importing via sysex, no Kit is 'loaded' to the editor or your Volca so you need to click on one of the kit slots to actually load a kit and send it to your device.
-
-I’ve emailed 
 
 ## Changing the UI Colours
 

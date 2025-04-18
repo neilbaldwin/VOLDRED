@@ -551,7 +551,7 @@ On the right are four sliders, H (hue), S (saturation), L (lightness) and A (bac
 ## Miscellaneous Options
 
 <p align="center">
-  <img src="img/Options.png" width="300"/>
+  <img src="img/Options.png" width="480"/>
 </p>
 
 These may change in future updates (added to) but currently there's just two options:

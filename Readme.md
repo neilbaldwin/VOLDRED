@@ -107,7 +107,9 @@ The button in the top-left corner is to reload the current Part from the current
 
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
 
-<img src="img/FX and Waveguide.png" style="width:100;margin-left:auto;margin-right:auto">
+<p align="center">
+  <img src="img/FX and Waveguide.png" width="300"/>
+</p>
 
 >[!tip]
 >On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all six Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.

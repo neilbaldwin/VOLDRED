@@ -275,7 +275,9 @@ In Korg's wisdom they gave us just one Pitch Q control per Part so if you enable
 
 ### Reloading Part
 
-![|400](<img/Reload Part.png>)
+<p align="center">
+  <img src="img/Reload Part.png" height="150"/>
+</p>
 
 Tapping the circle-arrow button at the top-left of Layer 1 will reload the currently selected Part from the currently loaded Kit.
 
@@ -288,7 +290,9 @@ Tapping the circle-arrow button at the top-left of Layer 1 will reload the curre
 
 ## FX and Waveguide
 
-![|240](<img/FX and Waveguide.png>)
+<p align="center">
+  <img src="img/FX and Waveguide.png" width="160"/>
+</p>
 
 #### FX
 Both Layers in a Part share the parameters in the FX section. These are *Pan*, *Bit Crush*, *Fold*, *Drive*, *Dry Gain* and *Send* (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
@@ -372,7 +376,9 @@ This one will also take a bit of explaining. Settle in.
 
 First thing, get to know the controls of a Macro Control. Each of the 6 Macro Controls are identical.
 
-![|200](<img/Macro Knob.png>)
+<p align="center">
+  <img src="img/Macro Knob.png" height="200"/>
+</p>
 
 ##### Macro Dial
 The dial in the center is what controls the output of the Macro Control. Once parameters are assigned to it, rotating the control will send values to the mapped parameters.
@@ -518,7 +524,9 @@ Go to Sysex Librarian, select a previously exported Kit file and click on the Pl
 
 ## Changing the UI Colours
 
-![](<img/UI Colours.png>)
+<p align="center">
+  <img src="img/UI Colours.png" width="300"/>
+</p>
 
 On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLDRED.
 
@@ -526,15 +534,23 @@ The section on the left, `UI ELEMENTS`, is just a bunch of dummy objects so you 
 
 On the right are four sliders, H (hue), S (saturation), L (lightness) and A (background alpha). Slide these around until you get your perfect colour scheme!
 
-![](<img/Colour 1.png>)
+<p align="center">
+  <img src="img/Colour 1.png" width="300"/>
+</p>
 
-![](<img/Colour 2.png>)
+<p align="center">
+  <img src="img/Colour 2.png" width="300"/>
+</p>
 
-![](<img/Colour 3.png>)
+<p align="center">
+  <img src="img/Colour 3.png" width="300"/>
+</p>
 
 ## Miscellaneous Options
 
-![](<img/Options.png>)
+<p align="center">
+  <img src="img/Options.png" width="300"/>
+</p>
 
 These may change in future updates (added to) but currently there's just two options:
 #### Load Kit 01 at Launch

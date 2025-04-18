@@ -192,7 +192,7 @@ The default editing mode lets you edit each Layer independently. However the Lay
 To enable linked editing tap on the LINK icon to the right of the Layer name. It will turn red when active.
 
 <p align="center">
-  <img src="img/Link.png" height="100"/>
+  <img src="img/Link.png" height="150"/>
 </p>
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
@@ -232,7 +232,7 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used to randomise and initialise parameters respectively. Exactly how and what the `RAND` and `INIT` buttons affect depends on the three toggle buttons above them: `LY`, `FX` and `WG`
 
 <p align="center">
-  <img src="img/Link.png" width="200"/>
+  <img src="img/Link.png" height="150"/>
 </p>
 
 >[!tip]
@@ -260,7 +260,7 @@ There is a *hidden* feature (read: not so obvious from the UI) that enables you 
 Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
 <p align="center">
-  <img src="img/Locked.png" width="200"/>
+  <img src="img/Locked.png" height="150"/>
 </p>
 
 ### PITCH and Q

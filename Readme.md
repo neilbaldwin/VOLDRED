@@ -1,28 +1,13 @@
-![](<img/logo.png>)
+## VOLDRED : Volca Drum Editor by Neil Baldwin, 2025
 
 VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and convenience to your editing experience and has a ton of tricks up its sleeve to transform the sound designing process on the Volca Drum.
 
-![](<img/VOLDRED UI.png>)
-
-## Why Do I Need VOLDRED?
-
-Let's face it, sound editing on the Volca Drum is *fiddly*. No offence, Korg. Too much menu diving, too much cycling between Parts. Too much damn scrolling through the oscillator/modulation/envelope combinations to dial in the configuration you want. And trying to do all of this via the tiny knobs and tiny screen. *Fiddly*.
-
-VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
-
-* Intuitive touch-screen interface that lets you see and edit ALL Part parameters on a single screen
-* Loading and saving of up to 16 "kits" that can be instantly recalled via a single click/touch and also recalled via MIDI messages. These are stored inside VOLDRED
-* Copying parameters between Parts
-* Edit Layers independently or linked, with the added feature that you can edit both layers simultaneously and the parameters of each layer retain their numerical relationship to each other (more on this later)
-* Full randomisation. Similar to randomisation on the hardware but adds further randomisation to the FX parameters (Pan, Bit Crush, Fold etc.) and also the Waveguide parameters. Plus any parameter can easily be "locked" to prevent it being randomised
-* Layers/FX/Waveguide can be instantly initialised with a single touch
-* Fast switching between Parts for editing the entire kit
-* Pads for MIDI triggering the six tracks (Parts) and also a mini-keyboard for playing the Volca Drum melodically or for using keyboard input to set the pitch of the oscillators
-* Customisable colour-scheme!
+![](<img/VOLDRED.png>)
 
 ## Index
 
 * [Requirements](#requirements)
+* [Why Do I Need VOLDRED?](#why-do-i-need-voldred)
 * [UI Walkthrough](#ui-walkthrough)
 * * [Part Selector](#part-selector)
 * * [Layer Controls](#layer-controls)
@@ -45,12 +30,13 @@ VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
 * * * [TRG](#trg-trigger)
 * * * [OCT](#oct-octave)
 * * * [LYR](#lyr-layer)
-* * [How Does It Work?](#how-does-it-work)
+* * * [How Does It Work?](#how-does-it-work)
 * * [Moving The Pads/Keyboard Window](#wait-theres-more)
 * [Loading and Saving Kits](#loading-and-saving-kits)
 * * [How To Load and Save](#how-to-load-and-save-in-voldred)
 * * [Loading Kits Via MIDI](#loading-kits-via-midi)
 * [Copying Parts](#copying-parts)
+* [Sysex Backup and Restore](#Sysex%20Backup%20and%20Restore)
 * [Changing the UI Colours](#changing-the-ui-colours)
 * [Misc Options](#miscellaneous-options)
 * [Roundup](#roundup)
@@ -65,6 +51,25 @@ You'll also need Touch OSC, and a device to run it on. And some sort of MIDI dev
 You have to pay for Touch OSC on mobile devices but **you can download it for a free, unrestricted trial** on desktop computers. The mobile version is about $15.
 
 If you don't already own [Touch OSC](https://hexler.net/touchosc) I can't express strongly enough how good it is. Plus, the developers, Hexler, are hardworking independent artists in their own right and these kind of people benefit from our support where we can. I am in no way affiliated to them or paid by them: they just make really good stuff for audio and visual artists.
+
+### Why Do I Need VOLDRED?
+
+Let's face it, sound editing on the Volca Drum is *fiddly*. No offence, Korg. Too much menu diving, too much cycling between Parts. Too much damn scrolling through the oscillator/modulation/envelope combinations to dial in the configuration you want. And trying to do all of this via the tiny knobs and tiny screen. *Fiddly*.
+
+VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
+
+* Intuitive touch-screen interface that lets you see and edit ALL Part parameters on a single screen
+* Loading and saving of up to 16 "kits" that can be instantly recalled via a single click/touch and also recalled via MIDI messages. These are stored inside VOLDRED
+* Copying parameters between Parts
+* Sysex exporting and importing of Kits
+* Edit Layers independently or linked, with the added feature that you can edit both layers simultaneously and the parameters of each layer retain their numerical relationship to each other (more on this later)
+* Full randomisation. Similar to randomisation on the hardware but adds further randomisation to the FX parameters (Pan, Bit Crush, Fold etc.) and also the Waveguide parameters. Plus any parameter can easily be "locked" to prevent it being randomised
+* Layers/FX/Waveguide can be instantly initialised with a single touch
+* Fast switching between Parts for editing the entire kit
+* Pads for MIDI triggering the six tracks (Parts)
+* Mini-keyboard for playing the Volca Drum melodically or for using keyboard input to set the pitch of the oscillators
+* Super-flexible mappable Macro knobs - control almost every parameter with one knob!
+* Customisable colour-scheme!
 
 ## UI Walkthrough
 
@@ -88,20 +93,24 @@ Below the Part Selector are two identical groups of controls that contain the pa
 Here you can see *Oscillator Level*, *Oscillator Shape*, *Oscillator Pitch* etc. for Layer 1. The controls for Layer 2 are identical.
 
 The cluster of buttons below the Oscillator Level radial control various options and modes for linked editing and randomisation.  See [Layers: Linked Editing](#layers-linked-editing) and [Randomisation and Initialisation](#randomisation-and-initialisation) for more details.
+
+The button in the top-left corner is to reload the current Part from the currently selected Kit. More on this later.
+
 ### Part FX and Waveguide
 
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
 
-![](<img/FX and Waveguide.png>)
+![|240](<img/FX and Waveguide.png>)
+
 
 >[!tip]
->On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.
+>On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all six Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.
 
 ### Settings Tab
 
 The last tab in the Part Selector takes you to the Settings page:
 
-![](<img/Settings.png>)
+![](<img/Settings Tab.png>)
 
 Here you can load/save kits, copy parameters between Parts, change the UI colours and set various other parameters.
 
@@ -119,18 +128,27 @@ Immediately below the Load/Save section is the controls to copy parameter settin
 ![](<img/Copy Parts.png>)
 
 For more details see [Copying Parts](#copying-parts)
+
+#### Sysex Backup & Restore
+
+Below Copy Parts are the two controls for exporting and importing your Kit data as a MIDI sysex file.
+
+![](<img/Sysex.png>)
+
+For more details see [Sysex Backup and Restore](#sysex-backup-and-restore)
+
 #### UI Colour Settings
 
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)
 
-![](<img/UI Colours.png>)
+<img src="img/UI Colours.png" width=75%>
 
 ## Setting Up and Getting Started
 
 Load VOLDRED into Touch OSC and in the Connections window make sure you have a MIDI output configured to send MIDI to your Volca Drum. VOLDRED sends all of the parameter changes via MIDI messages (from the Lua scripting). It does not use OSC.
 
 >[!tip]
->By default, VOLDRED sends MIDI to all enabled Touch OSC MIDI Connections.
+>By default, VOLDRED sends MIDI to your Volca on MIDI Connection #1 (Touch OSC setup). By default it uses MIDI Connection #2 (Touch OSC setup) to send and receive sysex Kit data.
 
 >[!important]
 >Your Volca Drum must be in the default MIDI mode where the Parts are split across MIDI channels 1-6. VOLDRED won't work if your Volca Drum is in the single-channel mode.
@@ -162,7 +180,7 @@ The default editing mode lets you edit each Layer independently. However the Lay
 
 To enable linked editing tap on the LINK icon to the right of the Layer name. It will turn red when active.
 
-![](<img/Link.webp>)
+![|200](<img/Link.png>)
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
 
@@ -200,18 +218,18 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 
 The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used to randomise and initialise parameters respectively. Exactly how and what the `RAND` and `INIT` buttons affect depends on the three toggle buttons above them: `LY`, `FX` and `WG`
 
-![](<img/Link.webp>)
+![|200](<img/Link.png>)
 
 >[!tip]
 >**Randomisation and Initialisation Modes**
 >
 >`LY` : If `LY` is enabled, when you press `RAND` or `INIT`, all the Layer parameters of the current Part will be affected.
 >
->`FX` : If `FX` is enabled, when you press `RAND` or `INIT`, only the controls in the FX section will be affected. Note: this includes the Waveguide Send control.
+>`FX` : If `FX` is enabled, when you press `RAND` or `INIT`, the controls in the FX section will be affected. Note: this includes the Waveguide Send control.
 >
->`WG` : If `WG` is enabled, when you press `RAND` or `INIT` only the controls in the Waveguide will be affected. Note: this does not include the Waveguide Send control.
+>`WG` : If `WG` is enabled, when you press `RAND` or `INIT` the controls in the Waveguide will be affected. Note: this does not include the Waveguide Send control.
 >
->It should be obvious but you can enable/disable any combination of these three toggles to get exactly the result you want.
+>It should be obvious but you can enable/disable any combination of these three buttons to target exactly the result you want.
 
 ### Linked Randomisation and Initialisation
 
@@ -222,41 +240,53 @@ Similar to how the *Layer Link* button behaves when manually editing the control
 
 ### Locking Parameters from RAND and INIT
 
-There is a *hidden* feature (read: not so obvious from the UI) that enables you to lock out any number of individual parameters from being affected by `RAND` or `INIT`. Simply tap on the parameter name. If it's locked it will have a box around the name.
+There is a *hidden* feature (read: not so obvious from the UI) that enables you to lock out any number of individual parameters from being affected by `RAND` or `INIT`. Simply tap on the parameter name. If it's locked it will have a box around the text.
 
 Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
-![](<img/Locked.png>)
+![|480](<img/Locked.png>)
 
 ### PITCH and Q
 
 You'll notice above the slider that controls Oscillator Pitch, there is a toggle button labelled "Q"
 
-![](<img/Pitch Q.png>)
+![|480](<img/Pitch Q.png>)
 
-This is to enable or disable the Volca's pitch quantisation. When disabled the oscillator pitch isn't quantised. When enabled the pitch is quantised to semi-tone intervals.
+This is to enable or disable the Volca's pitch quantisation (QPI). When disabled the oscillator pitch isn't quantised. When enabled the pitch is quantised to semi-tone intervals.
 
 In Korg's wisdom they gave us just one Pitch Q control per Part so if you enable/disable it in one Layer, it's also enabled/disabled in the other Layer as a visual reminder that Pitch Q affects both Layers.
 
+### Reloading Part
+
+![|400](<img/Reload Part.png>)
+
+Tapping the circle-arrow button at the top-left of Layer 1 will reload the currently selected Part from the currently loaded Kit.
+
+>[!note]
+>Reloading the current Part will only reload Layer 1, Layer 2 and the FX parameters. Waveguide parameters will not be reloaded.
+
+>[!tip]
+>See [Loading and Saving Kits](#loading-and-saving-kits) for explanation of how to load and save kits in VOLDRED.
+
+
 ## FX and Waveguide
 
-![](<img/FX and Waveguide.png>)
+![|240](<img/FX and Waveguide.png>)
 
 #### FX
 Both Layers in a Part share the parameters in the FX section. These are *Pan*, *Bit Crush*, *Fold*, *Drive*, *Dry Gain* and *Send* (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
-
 #### Waveguide
 Similar to Volca Drum FX parameters, there is only one Waveguide section which is shared by all Parts, though each Part does have its own independent Send that controls how much of the output of each Part is sent to the Waveguide processor.
 
 The Waveguide is shown on each Part's display but if you change any of the Waveguide parameters on a Part page it applies to all Parts. I'm sure you know this as a Volca Drum user but it's worth reinforcing here as each Part might seem to have its own set of Waveguide parameters: they don't but I display the Waveguide in each Part for editing convenience.
 
-## Drum Pads and Mini Keyboard
+## Controller Window
 
-VOLDRED includes a *secret* Drum Pads and Mini Keyboard window. To open and close it, tap on the small square icon to the left of the OSCILLATOR heading.
+VOLDRED includes a *secret* Controller Window that combines Drum Pads, Mini Keyboard and Macro Knobs in the same floating window. To open and close it, tap on the small square icon to the left of the OSCILLATOR heading.
 
 ![](<img/Part Selection.png>)
 
-The window is a dual-function window so its appearance will depend on the last time you used it. It will either be in Drum Pad or Mini Keyboard mode.
+The window is a multi-function window so its appearance will depend on the last time you used it. It will either be in Drum Pad, Mini Keyboard or Macro mode.
 ### Drum Pads (Triggers)
 
 ![](<img/Drum Pads.png>)
@@ -264,11 +294,14 @@ The window is a dual-function window so its appearance will depend on the last t
 In this mode, tapping on each of the pads, P-1 to P-6 will trigger the sound on those Parts (tracks) on the Volca Drum.
 
 Velocity is mapped to the position you tap on the pad: maximum velocity is in the middle and it reduces the closer to the edge of the pad you tap.
+#### Drum Pad Icon
+To switch to Mini Keyboard tap the keyboard icon at the top-right.
+#### Macro Icon
+The circle icon takes you to the Macros but we'll look at the keyboard first.
 
-The `[X]` button closes the window. The small keyboard-looking icon at the top-right switches to the *Mini Keyboard* mode.
 ### Mini Keyboard (Pitch)
 
-![](<img/Mini Keyboard.webp>)
+![](<img/Mini Keyboard.png>)
 
 >[!important]
 >The Volca Drum does not respond to MIDI note numbers in Key-On messages. The Pitch Input keyboard works by directly setting the Oscillator Pitch parameter so just be aware that it will modify the currently selected Part.
@@ -276,15 +309,13 @@ The `[X]` button closes the window. The small keyboard-looking icon at the top-r
 OK so this one will take a little more explaining than the Drum Pad/Triggers mode. It was also one of my favourite VOLDRED features to realise!
 
 I'll go over the controls first and then explain a bit more about what's actually going on:
-#### Drum Pad Icon
-The small drum pad icon at the top-right will take you back to the *Drum Pad* mode. You see?
 #### Keyboard
 The *keyboard* is just over 1 octave of touch pads (16 in total) starting at C and ending an octave-and-a-bit above at D#/Eb. The nearer to the bottom edge you tap, the higher the velocity.
 
 >[!tip]
 >Remember that the Volca Drum has two pitch modes: unquantised and quantised. To get proper musical semi-tone intervals on the keyboard you need to be in quantised mode by enabling the Q button above the Pitch slider. You can use the keyboard in either mode though, of course.
 #### TRG (trigger)
-This toggle-button controls whether the current Part is triggered as you tap the keys on the keyboard. Handy if you're modifying a Part with the sequencer running, for example, so that you can change the pitch without repeatedly triggering the sound.
+This toggle-button controls whether the current Part is triggered as you tap the keys on the keyboard. Handy if you're modifying a Part with the sequencer running, for example, so that you can use the keyboard to change the pitch without repeatedly triggering the sound.
 #### OCT (octave)
 You can change the current octave of the keyboard. The current octave is displayed on the two "C" keys.
 #### LYR (layer)
@@ -311,13 +342,58 @@ As per the comment above, the Volca Drum *does not respond to MIDI note numbers*
 >
 >Now when you play the keyboard you'll hear that the two Layers are always seven semitones apart.
 
+### Macro Controls
+
+![](<img/Macros.png>)
+
+This one will also take a bit of explaining. Settle in.
+
+>[!note]
+>There are six Macro Controls, each of which can be mapped to multiple controls. Even though there are six, the same number as there are Parts, the Macro Controls are not tied to a specific Part. For example, any Macro Control can be mapped to any number of parameters over one or more Parts and even the Waveguide.
+
+#### Macro Control
+
+First thing, get to know the controls of a Macro Control. Each of the 6 Macro Controls are identical.
+
+![|200](<img/Macro Knob.png>)
+
+##### Macro Dial
+The dial in the center is what controls the output of the Macro Control. Once parameters are assigned to it, rotating the control will send values to the mapped parameters.
+##### Mapping Button (+)
+Tap this button to enable mapping for this Macro. When in mapping mode the Macro name (M1 in this case) will flash as a *warning* that you are in Mapping Mode. More on this below.
+##### Clear Button (X)
+This simply clears any mapping from the Macro.
+##### Mapped Controls Indicator
+The circular indicator at the top-left indicates if any parameters are currently mapped to this Macro. If it's off then this Macro has no mapped parameters. This is mainly so when looking to map parameters you can see at a glance any Macro Controls that are currently unused.
+##### Dial Mode
+The diamond-shaped button at the top-right controls what happens when you move (and then release) the Macro Dial. When this button is unlit, once you release your finger/mouse on the Macro Dial, the value of the dial stays where you left it. If this button is lit, when you lift off your finger the Macro Dial will snap back to zero.
+
+#### Mapping Parameters to Macro Controls
+
+Here's where it gets a little weird. Weird is good.
+
+>[!example]
+>Let's start off simple. We'll map the Oscillator Level (Part 1, Layer 1) to Macro Control M1. Have Part 1 selected and open the Controller Window and switch to Macros.
+>
+>* First click/press the X on Macro M1 to clear any previous mapping. If the Dial Mode button is on (the diamond button at the top-right), turn it off for the time being
+>* Then click/press the + button on Macro Control M1 to enable mapping. M1 will start flashing to tell you that you are in mapping mode.
+>* Now we will define the *range* of how the Macro Dial affects the Oscillator Level by moving the Level control between two points. Click somewhere near the bottom and move the control to somewhere near the top of it's range. M1 will momentarily flash to tell you that the mapping has been registered
+>* Now try moving the Macro Dial and you will see Oscillator Level move through the range you just defined. The range you defined is scaled over the full range of the Macro Dial
+>* This also works in both directions. For simplicity, tap the + button to stop mapping and then the X button to clear the mapping you just made
+>* Now move the Oscillator Level to maximum. Re-engage mapping on M1 and this time tap-and-drag the Oscillator Level from maximum to it's minimum. Again M1 will flash to let you know the mapping was successful
+>* Now when you move the Macro Dial you'll see that Oscillator Level moves in the opposite direction to the Macro Dial
+>* Tap the Dial Mode (diamond) button to turn it on. You'll see that the Macro Dial snaps back to zero. Move the Macro Dial and let it go to see the behaviour in this mode.
+>* Now while mapping is still enabled (M1 flashing?) add another parameter or two by tapping-and-dragging in the same way. Move the Macro Dial and see that all mapped parameters are now controlled by M1
+
+
 ### Wait, There's More!
 
 I know what you're thinking: sure, that little keyboard thing is handy but it often gets in the way of the Layer controls. Well...you can move it! I know: I'm good.
 
 If you tap-and-hold anywhere in the big empty part at the top, between the two icons, you can drag the window around and place it somewhere out of the way when you're editing parameters but still want to be able to trigger the Parts or play the Volca via the mini-keyboard.
 
-![](<img/moving.gif>)
+![](<img/Drum Drag.png>)
+
 
 >[!tip]
 >**A Clever Hack!**
@@ -329,7 +405,7 @@ If you tap-and-hold anywhere in the big empty part at the top, between the two i
 >Because of this there is an annoying *quirk* where you're able to drag your touch/mouse pointer outside of the window when dragging and it will stop moving the window and touch/press the control that's directly under where your finger/mouse left the window. I haven't figured out a way to fix it so my advice to you is thus: don't try to drag the window around really quickly and be deliberate about where you tap-and-drag to reduce the risk of the "pop out" bug.
 
 >[!note]
->If the keyboard window is open and you switch to the SETTING tab, the window will be closed.
+>If the keyboard window is open and you switch to the SETTING tab, the window will be hidden temporarily until you switch back to one of the six Part tabs.
 
 ## Loading and Saving Kits
 
@@ -355,7 +431,7 @@ If you look directly underneath each slot there is a small rectangular indicator
 To *save* the current kit to a slot, first tap on the `SAVE` button. It will turn red indicating that it's waiting for you to select a slot. Tap a slot to save. If you change your mind, tap the `SAVE` button again to cancel the save operation.
 #### Clear
 The `CLEAR` button will clear the currently selected slot. There's no undo but if you've just selected a slot to clear it, that slot will still be *loaded*. So, if you accidentally clear a slot, just save it again. If you try to tap `CLEAR` while `SAVE` is active you'll get an error message telling you to cancel `SAVE` before you can `CLEAR` the slot.
-#### Loading Kits Via MIDI
+#### Switching Kits Via MIDI
 It's also possible to recall Kits using MIDI control. Sending a Program Change message on Channel 1 to VOLDRED (inside Touch OSC) with the program change number 1 to 16 will recall the corresponding Kit. If the slot you try to recall is empty it will just fail silently and leave the current kit intact.
 
 ## Copying Parts
@@ -373,6 +449,54 @@ The `L1`, `L2` and `FX` buttons in the middle are toggles to let you filter what
 There's no option for copying Waveguide parameters are they're common to all Parts.
 
 It should be obvious but you can select any combination of `L1`, `L2` and `FX` to copy exactly the parameters you want.
+
+## Sysex Backup and Restore
+
+![](<img/Sysex.png>)
+
+>[!warning]
+>The sysex features are a relatively new addition to VOLDRED and have only received minimal testing and usage. Nothing should really *break* but...you know...
+
+As well as storing the 16 kits inside of the the .TOSC file when you save it, I recently added the ability to export and import Kit data from VOLDRED!
+### Sysex Setup
+
+>[!tip]
+>VOLDRED always attempts to communicate with your **Volca Drum** via MIDI on the **first MIDI connection** (in Touch OSC setup).
+>
+>VOLDRED always attempts to **send and receive sysex data** via MIDI on the **second MIDI connection** (in Touch OSC setup).
+>
+>This is my own setup to illustrate:
+>
+>![](<img/Touch OSC MIDI.png>)
+>
+>Here you can see that MIDI connection 1 is set to send and receive on my Zoom L6 interface (which is what I have the Volca MIDI connected to). MIDI connection 2 is set to "IAC Driver Bus" which is an internal MIDI connection on OSX.
+>
+>I then have a free sysex tool (OSX) called "Sysex Librarian" (there are Windows/Linux equivalents I'm sure):
+>
+>![](<img/Sysex Librarian.png>)
+
+### Sysex: How To Use
+
+As mentioned above, you'll need some sort of sysex librarian/tool software/app to receive and send the sysex data. I use "Sysex Librarian" on OSX (free) so find one for your own platform/setup. Once you've setup the MIDI connections in Touch OSC as detailed above, actually using the send and receive controls is very straightforward. I'll describe the process in relation to Sysex Librarian but I'm sure other software have a similar method.
+#### Sysex Sending
+
+On Sysex Librarian you have to click on "Record One" to engage receiving. Once it's waiting for sysex data, go to VOLDRED and tap on the `[SEND]` button:
+
+![](<img/Sysex.png>)
+
+Your Kit data will be sent to Sysex Librarian and the file will appear in the app's library as an unnamed file. From there you can either leave it in the internal library or export it as a .syx or .mid file. This is useful is you want to send or share your Kit sysex or move it to another device etc.
+#### Sysex Receiving
+
+To import a sysex Kit you first need to engage the `[RECEIVE]` button. When VOLDRED is waiting for sysex data the receive button will be coloured red.
+
+![](<img/Sysex Receive.png>)
+
+Go to Sysex Librarian, select a previously exported Kit file and click on the Play button (or double-click the file in the library list). The sysex data will be received by VOLDRED and then decoded into the 16 kit slots.
+
+>[!note]
+>After importing via sysex, no Kit is 'loaded' to the editor or your Volca so you need to click on one of the kit slots to actually load a kit and send it to your device.
+
+I’ve emailed 
 
 ## Changing the UI Colours
 
@@ -392,13 +516,19 @@ On the right are four sliders, H (hue), S (saturation), L (lightness) and A (bac
 
 ## Miscellaneous Options
 
-![](<img/Misc Options.png>)
+![](<img/Options.png>)
 
 These may change in future updates (added to) but currently there's just two options:
 #### Load Kit 01 at Launch
 A convenience option to have VOLDRED send the kit in slot 01 to your Volca Drum when you run VOLDRED.
 #### Pads/Keys Fixed MIDI Velocity
 By default, the position you tap on the pads and keys in the keyboard window determines the MIDI velocity of the triggered sound. If you'd rather this didn't happen you can have the velocity fixed.
+#### Radial/Fader Relative Response
+
+This option switches between the two response modes of the Touch OSC controls. The default is absolute which will set the current value of the control to wherever you touch it. In relative mode you can click/touch anywhere on the control and the value won't change until you drag your finger/mouse. Just an editing preference really.
+#### Mute MIDI When Mapping
+
+When you're setting the control range for macro mapping, by default the control you're adding to the macro map will send out MIDI data to your Volca just as if you were using the control normally. Sometimes this is handy but sometimes you might want to *silently* set the macro range. Turn this on and when you're setting the range, the control you're mapping won't send out MIDI data. Note this is only while mapping is active. MIDI function will be resumed if either the Macro window is closed or none of the six macro controls are in mapping mode.
 
 ## Roundup
 

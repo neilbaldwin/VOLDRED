@@ -23,7 +23,7 @@ VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and 
 * * [Locking Parameters From Randomisation](#locking-parameters-from-rand-and-init)
 * * [Pitch and Q](#pitch-and-q)
 * * [FX and Waveguide](#fx-and-waveguide)
-* [Drum Pads and Mini-Keyboard](#drum-pads-and-mini-keyboard)
+* [Controller Window](#controller-window)
 * * [Drum Pads](#drum-pads-triggers)
 * * [Mini Keyboard](#mini-keyboard-pitch)
 * * * [Keyboard](#keyboard)
@@ -101,7 +101,6 @@ The button in the top-left corner is to reload the current Part from the current
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
 
 ![|240](<img/FX and Waveguide.png>)
-
 
 >[!tip]
 >On the Volca Drum, both Layers share the same FX settings which is why there is only one FX section per Part. Similarly, all six Parts share the same Waveguide parameters, though each Part has its own *Waveguide Send* amount.

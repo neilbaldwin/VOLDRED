@@ -289,7 +289,6 @@ Tapping the circle-arrow button at the top-left of Layer 1 will reload the curre
 >[!tip]
 >See [Loading and Saving Kits](#loading-and-saving-kits) for explanation of how to load and save kits in VOLDRED.
 
-
 ## FX and Waveguide
 
 <p align="center">
@@ -298,6 +297,7 @@ Tapping the circle-arrow button at the top-left of Layer 1 will reload the curre
 
 #### FX
 Both Layers in a Part share the parameters in the FX section. These are *Pan*, *Bit Crush*, *Fold*, *Drive*, *Dry Gain* and *Send* (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
+
 #### Waveguide
 Similar to Volca Drum FX parameters, there is only one Waveguide section which is shared by all Parts, though each Part does have its own independent Send that controls how much of the output of each Part is sent to the Waveguide processor.
 
@@ -317,8 +317,10 @@ The window is a multi-function window so its appearance will depend on the last 
 In this mode, tapping on each of the pads, P-1 to P-6 will trigger the sound on those Parts (tracks) on the Volca Drum.
 
 Velocity is mapped to the position you tap on the pad: maximum velocity is in the middle and it reduces the closer to the edge of the pad you tap.
+
 #### Drum Pad Icon
 To switch to Mini Keyboard tap the keyboard icon at the top-right.
+
 #### Macro Icon
 The circle icon takes you to the Macros but we'll look at the keyboard first.
 
@@ -332,15 +334,19 @@ The circle icon takes you to the Macros but we'll look at the keyboard first.
 OK so this one will take a little more explaining than the Drum Pad/Triggers mode. It was also one of my favourite VOLDRED features to realise!
 
 I'll go over the controls first and then explain a bit more about what's actually going on:
+
 #### Keyboard
 The *keyboard* is just over 1 octave of touch pads (16 in total) starting at C and ending an octave-and-a-bit above at D#/Eb. The nearer to the bottom edge you tap, the higher the velocity.
 
 >[!tip]
 >Remember that the Volca Drum has two pitch modes: unquantised and quantised. To get proper musical semi-tone intervals on the keyboard you need to be in quantised mode by enabling the Q button above the Pitch slider. You can use the keyboard in either mode though, of course.
+
 #### TRG (trigger)
 This toggle-button controls whether the current Part is triggered as you tap the keys on the keyboard. Handy if you're modifying a Part with the sequencer running, for example, so that you can use the keyboard to change the pitch without repeatedly triggering the sound.
+
 #### OCT (octave)
 You can change the current octave of the keyboard. The current octave is displayed on the two "C" keys.
+
 #### LYR (layer)
 This radio-button toggles the target Layer between Layer 1 and Layer 2.  You might only want to affect the pitch of a single Layer so this is how you do it.
 
@@ -384,12 +390,16 @@ First thing, get to know the controls of a Macro Control. Each of the 6 Macro Co
 
 ##### Macro Dial
 The dial in the center is what controls the output of the Macro Control. Once parameters are assigned to it, rotating the control will send values to the mapped parameters.
+
 ##### Mapping Button (+)
 Tap this button to enable mapping for this Macro. When in mapping mode the Macro name (M1 in this case) will flash as a *warning* that you are in Mapping Mode. More on this below.
+
 ##### Clear Button (X)
 This simply clears any mapping from the Macro.
+
 ##### Mapped Controls Indicator
 The circular indicator at the top-left indicates if any parameters are currently mapped to this Macro. If it's off then this Macro has no mapped parameters. This is mainly so when looking to map parameters you can see at a glance any Macro Controls that are currently unused.
+
 ##### Dial Mode
 The diamond-shaped button at the top-right controls what happens when you move (and then release) the Macro Dial. When this button is unlit, once you release your finger/mouse on the Macro Dial, the value of the dial stays where you left it. If this button is lit, when you lift off your finger the Macro Dial will snap back to zero.
 
@@ -410,7 +420,6 @@ Here's where it gets a little weird. Weird is good.
 >* Tap the Dial Mode (diamond) button to turn it on. You'll see that the Macro Dial snaps back to zero. Move the Macro Dial and let it go to see the behaviour in this mode.
 >* Now while mapping is still enabled (M1 flashing?) add another parameter or two by tapping-and-dragging in the same way. Move the Macro Dial and see that all mapped parameters are now controlled by M1
 
-
 ### Wait, There's More!
 
 I know what you're thinking: sure, that little keyboard thing is handy but it often gets in the way of the Layer controls. Well...you can move it! I know: I'm good.
@@ -418,7 +427,6 @@ I know what you're thinking: sure, that little keyboard thing is handy but it of
 If you tap-and-hold anywhere in the big empty part at the top, between the two icons, you can drag the window around and place it somewhere out of the way when you're editing parameters but still want to be able to trigger the Parts or play the Volca via the mini-keyboard.
 
 ![](<img/Drum Drag.png>)
-
 
 >[!tip]
 >**A Clever Hack!**
@@ -443,19 +451,24 @@ A few things to get out of the way first:
 In short, VOLDRED kits exist in their own bubble inside of the Touch OSC file. Of course, you can *load* a kit in VOLDRED (sent to the VD) and then use the VD Save Kit to save the current settings to one of the 16 kits on the VD. If you don't save the kit on the VD, then you power it off or change kits on the VD, whatever you sent from VOLDRED will be lost (though still inside VOLDRED of course). I'm probably making this seem more complicated than it is.
 
 The other thing to bear in mind is loading and saving PRGs on the VD. When you change PRGs the kit with the same number as the PRG is loaded. This works slightly differently from loading a kit (on the VD) as you can load any of the 16 kits and keep the same PRG sequence. You'll know this if you're a seasoned VD user but it's worth mentioning here as it has implications on VOLDRED's loading of kits: if you send a kit from VOLDRED and then change PRGs, the VD's kit will change also.
+
 ### How To Load and Save in VOLDRED
 
 With all that out of the way you'll be reassured to know that actually loading and saving inside VOLDRED is fast, convenient and intuitive. To access loading and saving go to the SETTINGS tab.
 
 ![](<img/Load and Save.png>)
+
 #### Slots
 The 16 numbered boxes across the display are your kit *slots*. To *load* one just tap it. It will load pretty instantly and you'll get a message in the status box (the text box above) telling you it loaded.
 
 If you look directly underneath each slot there is a small rectangular indicator. If this is on/filled it means a kit is saved in that slot. If it's off/unfilled that means the slot is empty. If you try to load an empty slot you'll get an error message telling you that nothing was loaded.
+
 #### Saving
 To *save* the current kit to a slot, first tap on the `SAVE` button. It will turn red indicating that it's waiting for you to select a slot. Tap a slot to save. If you change your mind, tap the `SAVE` button again to cancel the save operation.
+
 #### Clear
 The `CLEAR` button will clear the currently selected slot. There's no undo but if you've just selected a slot to clear it, that slot will still be *loaded*. So, if you accidentally clear a slot, just save it again. If you try to tap `CLEAR` while `SAVE` is active you'll get an error message telling you to cancel `SAVE` before you can `CLEAR` the slot.
+
 #### Switching Kits Via MIDI
 It's also possible to recall Kits using MIDI control. Sending a Program Change message on Channel 1 to VOLDRED (inside Touch OSC) with the program change number 1 to 16 will recall the corresponding Kit. If the slot you try to recall is empty it will just fail silently and leave the current kit intact.
 
@@ -555,10 +568,13 @@ On the right are four sliders, H (hue), S (saturation), L (lightness) and A (bac
 </p>
 
 These may change in future updates (added to) but currently there's just two options:
+
 #### Load Kit 01 at Launch
 A convenience option to have VOLDRED send the kit in slot 01 to your Volca Drum when you run VOLDRED.
+
 #### Pads/Keys Fixed MIDI Velocity
 By default, the position you tap on the pads and keys in the keyboard window determines the MIDI velocity of the triggered sound. If you'd rather this didn't happen you can have the velocity fixed.
+
 #### Radial/Fader Relative Response
 
 This option switches between the two response modes of the Touch OSC controls. The default is absolute which will set the current value of the control to wherever you touch it. In relative mode you can click/touch anywhere on the control and the value won't change until you drag your finger/mouse. Just an editing preference really.
@@ -573,6 +589,7 @@ I guess the important thing to remember is to save the VOLDRED .tosc file - if y
 The other big restriction is that you can't really export the saved slots from VOLDRED so it's almost impossible to transfer your kits from one .tosc file to another. I do actually have a few ideas how this might be possible (secret: the kits are stored in hidden text boxes inside VOLDRED so you can actually copy and paste the text from one slot to another. I don't recommend it though, just yet.)
 
 I genuinely hope you find it useful and creatively inspiring. Once you get the hang of using it there's a lot of fun things you can do.
+
 ## Technical Stuff
 
 Due to the nature of Touch OSC files and the Lua scripting you can freely poke around inside the project and see how I did stuff. Most of the scripting is done in the root of the project file.

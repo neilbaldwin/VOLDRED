@@ -108,7 +108,7 @@ The button in the top-left corner is to reload the current Part from the current
 To the right side are the parameters for Part FX (Pan, Bit Crush, Drive, Waveguide Send etc.) and also the parameters for the Waveguide.
 
 <p align="center">
-  <img src="img/FX and Waveguide.png" width="300"/>
+  <img src="img/FX and Waveguide.png" width="160"/>
 </p>
 
 >[!tip]
@@ -149,6 +149,10 @@ For more details see [Sysex Backup and Restore](#sysex-backup-and-restore)
 
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)
 
+<p align="center">
+  <img src="img/UI Colours.png" width="300"/>
+</p>
+
 <img src="img/UI Colours.png" width=75%>
 
 ## Setting Up and Getting Started
@@ -182,13 +186,16 @@ The parameters in Layer 1 and Layer 2 should be pretty obvious as they correspon
 >Instead of having to use the Select knob on the Volca to scroll through all the combinations of *Oscillator Shape*, *Modulation Type* and *Envelope Shape*, you can just use the individual radio buttons to change those parameters directly!
 
 The cluster of buttons below Oscillator Level won't be so obvious. They control the editing mode and also options for randomisation and initialisation of parameters.
+
 #### Layers: Linked Editing
 
 The default editing mode lets you edit each Layer independently. However the Layers can be *linked* while editing meaning when you change parameters on one Layer, the parameter(s) on the other Layer will also be affected.
 
 To enable linked editing tap on the LINK icon to the right of the Layer name. It will turn red when active.
 
-![|200](<img/Link.png>)
+<p align="center">
+  <img src="img/Link.png" width="300"/>
+</p>
 
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
 
@@ -226,7 +233,9 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 
 The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used to randomise and initialise parameters respectively. Exactly how and what the `RAND` and `INIT` buttons affect depends on the three toggle buttons above them: `LY`, `FX` and `WG`
 
-![|200](<img/Link.png>)
+<p align="center">
+  <img src="img/Link.png" width="300"/>
+</p>
 
 >[!tip]
 >**Randomisation and Initialisation Modes**
@@ -252,7 +261,9 @@ There is a *hidden* feature (read: not so obvious from the UI) that enables you 
 
 Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
-![|480](<img/Locked.png>)
+<p align="center">
+  <img src="img/Locked.png" width="200"/>
+</p>
 
 ### PITCH and Q
 

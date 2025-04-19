@@ -607,7 +607,7 @@ When you're setting the control range for macro mapping, by default the control 
 
 I guess the important thing to remember is to save the VOLDRED .tosc file - if you don't do that then all your editing and saved kits will be lost. It's far from ideal but there's no way to get around that limitation, mostly due to the lack of MIDI Out on the Volca Drum (and thus the ability to read/dump the kits from it).
 
-The other big restriction is that you can't really export the saved slots from VOLDRED so it's almost impossible to transfer your kits from one .tosc file to another. I do actually have a few ideas how this might be possible (secret: the kits are stored in hidden text boxes inside VOLDRED so you can actually copy and paste the text from one slot to another. I don't recommend it though, just yet.)
+The other big restriction is the inability for Touch OSC to access the host's filesystem. I've tried (and I think it's pretty successful!) to compensate for this viw the sysex exporting and importing of Kit data. How useful that will be to you will very much depend on your own system and setup, especially the lack of a in-the-box solution for iPad. And though I can make it work for me using Sysex Librarian and wireless networked MIDI to my Macbook, I don't own a Windows or Linux machine that I can test on. Worst case: keep saving the .TOSC file and save multiple versions for different kits.
 
 I genuinely hope you find it useful and creatively inspiring. Once you get the hang of using it there's a lot of fun things you can do.
 

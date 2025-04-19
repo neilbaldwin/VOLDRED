@@ -537,7 +537,7 @@ To import a sysex Kit you first need to engage the `[RECEIVE]` button. When VOLD
 Go to Sysex Librarian, select a previously exported Kit file and click on the Play button (or double-click the file in the library list). The sysex data will be received by VOLDRED and then decoded into the 16 kit slots.
 
 >[!note]
->After importing via sysex, no Kit is 'loaded' to the editor or your Volca so you need to click on one of the kit slots to actually load a kit and send it to your device.
+>After importing via sysex, no Kit is 'loaded' to the editor or your Volca so you need to click on one of the Kit Slot to actually load a Kit and send it to your Volca.
 
 >[!important]
 >At the date of writing this I haven't found a way to send and receive sysex data from VOLDRED on iPad to another app running on the iPad. I've tried a few but none seem to work.
@@ -588,7 +588,7 @@ On the right are four sliders, H (hue), S (saturation), L (lightness) and A (bac
   <img src="img/Options.png" width="480"/>
 </p>
 
-These may change in future updates (added to) but currently there's just two options:
+These may change in future updates (added to) but currently there's just four options:
 
 #### Load Kit 01 at Launch
 A convenience option to have VOLDRED send the kit in slot 01 to your Volca Drum when you run VOLDRED.
@@ -597,10 +597,9 @@ A convenience option to have VOLDRED send the kit in slot 01 to your Volca Drum 
 By default, the position you tap on the pads and keys in the keyboard window determines the MIDI velocity of the triggered sound. If you'd rather this didn't happen you can have the velocity fixed.
 
 #### Radial/Fader Relative Response
-
 This option switches between the two response modes of the Touch OSC controls. The default is absolute which will set the current value of the control to wherever you touch it. In relative mode you can click/touch anywhere on the control and the value won't change until you drag your finger/mouse. Just an editing preference really.
-#### Mute MIDI When Mapping
 
+#### Mute MIDI When Mapping
 When you're setting the control range for macro mapping, by default the control you're adding to the macro map will send out MIDI data to your Volca just as if you were using the control normally. Sometimes this is handy but sometimes you might want to *silently* set the macro range. Turn this on and when you're setting the range, the control you're mapping won't send out MIDI data. Note this is only while mapping is active. MIDI function will be resumed if either the Macro window is closed or none of the six macro controls are in mapping mode.
 
 ## Roundup

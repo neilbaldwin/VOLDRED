@@ -101,7 +101,7 @@ Here you can see *Oscillator Level*, *Oscillator Shape*, *Oscillator Pitch* etc.
 
 The cluster of buttons below the Oscillator Level radial control various options and modes for linked editing and randomisation.  See [Layers: Linked Editing](#layers-linked-editing) and [Randomisation and Initialisation](#randomisation-and-initialisation) for more details.
 
-The button in the top-left corner is to reload the current Part from the currently selected Kit. More on this later.
+The button in the top-left corner is to open the Controller Window. See [Controller Window](#controller-window) for details.
 
 ### Part FX and Waveguide
 
@@ -281,7 +281,7 @@ In Korg's wisdom they gave us just one Pitch Q control per Part so if you enable
   <img src="img/Reload Part.png" height="150"/>
 </p>
 
-Tapping the circle-arrow button at the top-left of Layer 1 will reload the currently selected Part from the currently loaded Kit.
+Tapping the circle-arrow button at the top-left just underneath the Part selector will reload the currently selected Part from the currently loaded Kit.
 
 >[!note]
 >Reloading the current Part will only reload Layer 1, Layer 2 and the FX parameters. Waveguide parameters will not be reloaded.
@@ -307,7 +307,7 @@ The Waveguide is shown on each Part's display but if you change any of the Waveg
 
 VOLDRED includes a *secret* Controller Window that combines Drum Pads, Mini Keyboard and Macro Knobs in the same floating window. To open and close it, tap on the small square icon to the left of the OSCILLATOR heading.
 
-![](<img/Part Selection.png>)
+![](<img/Open Controller.png>)
 
 The window is a multi-function window so its appearance will depend on the last time you used it. It will either be in Drum Pad, Mini Keyboard or Macro mode.
 ### Drum Pads (Triggers)

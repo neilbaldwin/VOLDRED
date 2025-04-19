@@ -1,13 +1,31 @@
-## VOLDRED : Volca Drum Editor by Neil Baldwin, 2025
+## VOLDRED : Volca Drum Editor by Neil Baldwin
 
 VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and convenience to your editing experience and has a ton of tricks up its sleeve to transform the sound designing process on the Volca Drum.
 
 ![](img/VOLDRED.png)
 
+## Why Do I Need VOLDRED?
+
+Let's face it, sound editing on the Volca Drum is *fiddly*. No offence, Korg. Too much menu diving, too much cycling between Parts. Too much damn scrolling through the oscillator/modulation/envelope combinations to dial in the configuration you want. And trying to do all of this via the tiny knobs and tiny screen. *Fiddly*.
+
+VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
+
+* Intuitive touch-screen interface that lets you see and edit ALL Part parameters on a single screen
+* Loading and saving of up to 16 "kits" that can be instantly recalled via a single click/touch and also recalled via MIDI messages. These are stored inside VOLDRED
+* Copying parameters between Parts
+* Sysex exporting and importing of Kits
+* Edit Layers independently or linked, with the added feature that you can edit both layers simultaneously and the parameters of each layer retain their numerical relationship to each other (more on this later)
+* Full randomisation. Similar to randomisation on the hardware but adds further randomisation to the FX parameters (Pan, Bit Crush, Fold etc.) and also the Waveguide parameters. Plus any parameter can easily be "locked" to prevent it being randomised
+* Layers/FX/Waveguide can be instantly initialised with a single touch
+* Fast switching between Parts for editing the entire kit
+* Pads for MIDI triggering the six tracks (Parts)
+* Mini-keyboard for playing the Volca Drum melodically or for using keyboard input to set the pitch of the oscillators
+* Super-flexible mappable Macro knobs - control almost every parameter with one knob!
+* Customisable colour-scheme!
+
 ## Index
 
 * [Requirements](#requirements)
-* [Why Do I Need VOLDRED?](#why-do-i-need-voldred)
 * [UI Walkthrough](#ui-walkthrough)
 * * [Part Selector](#part-selector)
 * * [Layer Controls](#layer-controls)
@@ -58,25 +76,6 @@ You'll also need Touch OSC, and a device to run it on. And some sort of MIDI dev
 You have to pay for Touch OSC on mobile devices but **you can download it for a free, unrestricted trial** on desktop computers. The mobile version is about $15.
 
 If you don't already own [Touch OSC](https://hexler.net/touchosc) I can't express strongly enough how good it is. Plus, the developers, Hexler, are hardworking independent artists in their own right and these kind of people benefit from our support where we can. I am in no way affiliated to them or paid by them: they just make really good stuff for audio and visual artists.
-
-### Why Do I Need VOLDRED?
-
-Let's face it, sound editing on the Volca Drum is *fiddly*. No offence, Korg. Too much menu diving, too much cycling between Parts. Too much damn scrolling through the oscillator/modulation/envelope combinations to dial in the configuration you want. And trying to do all of this via the tiny knobs and tiny screen. *Fiddly*.
-
-VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
-
-* Intuitive touch-screen interface that lets you see and edit ALL Part parameters on a single screen
-* Loading and saving of up to 16 "kits" that can be instantly recalled via a single click/touch and also recalled via MIDI messages. These are stored inside VOLDRED
-* Copying parameters between Parts
-* Sysex exporting and importing of Kits
-* Edit Layers independently or linked, with the added feature that you can edit both layers simultaneously and the parameters of each layer retain their numerical relationship to each other (more on this later)
-* Full randomisation. Similar to randomisation on the hardware but adds further randomisation to the FX parameters (Pan, Bit Crush, Fold etc.) and also the Waveguide parameters. Plus any parameter can easily be "locked" to prevent it being randomised
-* Layers/FX/Waveguide can be instantly initialised with a single touch
-* Fast switching between Parts for editing the entire kit
-* Pads for MIDI triggering the six tracks (Parts)
-* Mini-keyboard for playing the Volca Drum melodically or for using keyboard input to set the pitch of the oscillators
-* Super-flexible mappable Macro knobs - control almost every parameter with one knob!
-* Customisable colour-scheme!
 
 ## UI Walkthrough
 

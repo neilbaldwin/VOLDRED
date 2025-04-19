@@ -305,9 +305,11 @@ The Waveguide is shown on each Part's display but if you change any of the Waveg
 
 ## Controller Window
 
-VOLDRED includes a *secret* Controller Window that combines Drum Pads, Mini Keyboard and Macro Knobs in the same floating window. To open and close it, tap on the small square icon to the left of the OSCILLATOR heading.
+VOLDRED includes a *secret* Controller Window that combines Drum Pads, Mini Keyboard and Macro Knobs in the same floating window. To open and close it, tap on the small square icon in the top-left of Layer 1.
 
-![](<img/Open Controller.png>)
+<p align="center">
+  <img src="img/Open Controller.png" width="300"/>
+</p>
 
 The window is a multi-function window so its appearance will depend on the last time you used it. It will either be in Drum Pad, Mini Keyboard or Macro mode.
 ### Drum Pads (Triggers)

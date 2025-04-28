@@ -194,30 +194,30 @@ To enable linked editing tap on the LINK icon to the right of the Layer name. It
 Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
 
 >[!important]
->**Linked and Synched Layer Editing**
+>**Absolute and Relative Layer Editing**
 >
-> There are two different modes of the linked Layer editing. I call them *Linked* and *Synced*.
+> There are two different modes of the linked Layer editing, **Absolute** and **Relative**.
 > 
-> **Synced Layer Editing**
+> **Absolute Layer Editing**
 > 
-> *When both of the two Layer Link buttons are active you are editing in Synced Mode*.
+> *When both of the two Layer Link buttons are active you are editing in Absolute Mode*.
 > 
 > Any changes you make to the Layer that has LINK enabled will be *mirrored* to the other Layer. This works similar to when you have "LAYER 1+2" selected on the VD. Moving a control on either Layer will set the parameter on the other Layer to the same value.
 > 
-> **Linked Layer Editing**
+> **Relative Layer Editing**
 > 
-> *When only one of the Layer Link buttons is active you are editing in Linked Mode.*
+> *When only one of the Layer Link buttons is active you are editing in Relative Mode.*
 > 
 > Any changes you make to the Layer that has LINK enabled will affect the other layer but instead of setting the parameter of both Layers to the same value, in this mode the relative numerical relationship between the two layers' parameters is maintained for as long as you're touching the control. See below for an example.
 > 
-> Also when only one Layer Link button is active, the Layer that doesn't have LINK enabled will not affect then other Layer when you change the parameters.
+> Also when only one Layer Link button is active, the Layer that doesn't have LINK enabled will not affect then other Layer when you change its parameters.
 
-*Synced Layer Editing* should be fairly familiar as it behaves in the same way as editing the two Layers simultaneously on the VD (Layer 1+2 mode). However *Linked Layer Editing* might not be so obvious:
+*Absolute Layer Editing* should be fairly familiar as it behaves in the same way as editing the two Layers simultaneously on the VD (Layer 1+2 mode). However *Relative Layer Editing* might not be so obvious:
 
 >[!tip]
->**Linked Layer Editing**
+>**Relative Layer Editing**
 >
->Let's say  Layer 1 Level is set to 100 and Layer 2 Level is set to 50. If you enable the LINK button on Layer 1 (and LINK on Layer 2 is disabled) then you'll be editing in *Linked Mode*.
+>Let's say  Layer 1 Level is set to 100 and Layer 2 Level is set to 50. If you enable the LINK button on Layer 1 (and LINK on Layer 2 is disabled) then you'll be editing in *Relative Mode*.
 >
 >Now move Layer 1 Level control to 75. You'll see that instead of Layer 2 Level also being set to  75, instead it has moved to 25: maintaining the original relationship between the level of each Layer.
 >
@@ -247,7 +247,7 @@ The two buttons under the *Oscillator Level* control, `RAND` and `INIT` are used
 Similar to how the *Layer Link* button behaves when manually editing the controls, *Layer Link* also affects randomisation and initialisation. For example if you have LINK enabled on Layer 1 and you press the Layer 1 `RAND` button, the parameters in Layer 2 will also be randomised.
 
 >[!note]
->There isn't a *Linked* and *Synced* mode when using `RAND` or `INIT`. If a Layer Link button is active, it will affect the other Layer by either randomising or initialising it's parameters.
+>There isn't an *Absolute* or *Relative* mode when using `RAND` or `INIT`. If a Layer Link button is active, it will affect the other Layer by either randomising or initialising its parameters too.
 
 ### Locking Parameters from RAND and INIT
 

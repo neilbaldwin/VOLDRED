@@ -585,15 +585,15 @@ On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLD
 There are four sliders: H (hue), S (saturation), L (lightness) and A (background alpha). Slide these around until you get your perfect colour scheme!
 
 <p align="center">
-  <img src="img/Colour 1.png" width="300"/>
+  <img src="img/Colour 1.png" width="400"/>
 </p>
 
 <p align="center">
-  <img src="img/Colour 2.png" width="300"/>
+  <img src="img/Colour 2.png" width="400"/>
 </p>
 
 <p align="center">
-  <img src="img/Colour 3.png" width="300"/>
+  <img src="img/Colour 3.png" width="400"/>
 </p>
 
 ## Editor Options

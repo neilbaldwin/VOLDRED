@@ -424,7 +424,7 @@ I know what you're thinking: sure, that little keyboard thing is handy but it of
 
 If you tap-and-hold anywhere in the big empty part at the top, between the two icons, you can drag the window around and place it somewhere out of the way when you're editing parameters but still want to be able to trigger the Parts or play the Volca via the mini-keyboard.
 
-![](<img/Drum Drag.png>)
+![](<img/Controller Window Move.gif>)
 
 >[!tip]
 >**A Clever Hack!**

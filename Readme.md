@@ -494,15 +494,15 @@ It's also possible to recall Kits using MIDI control. Sending a Program Change m
 
 ![](<img/Copy Parts.png>)
 
-This should be fairly self-explanatory. You select the source Part on the left and the destination Part on the right then tap `COPY` to copy the parameters from one to the other.
+This should be fairly self-explanatory. You select the source Part on the left (P1-P6) and the destination Part on the right then tap `COPY` to copy the parameters from one Part to the other.
 
-The `L1`, `L2` and `FX` buttons in the middle are toggles to let you filter what parameter groups are copied:
+The `L1`, `L2` and `FX` buttons next to the COPY button are toggles to let you filter what parameter groups are copied:
 
 * `L1` means everything from Layer 1 is copied when `COPY` is pressed
 * `L2` means everything from Layer 2 is copied when `COPY` is pressed
 * `FX` means the FX parameters are copied when `COPY` is pressed
 
-There's no option for copying Waveguide parameters are they're common to all Parts.
+There's no option for copying Waveguide parameters as they're common to all Parts.
 
 It should be obvious but you can select any combination of `L1`, `L2` and `FX` to copy exactly the parameters you want.
 

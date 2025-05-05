@@ -60,7 +60,7 @@ VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
 * * * [Sysex Sending](#sysex-sending)
 * * * [Sysex Receiving](#sysex-receiving)
 * [Changing the UI Colours](#changing-the-ui-colours)
-* [Misc Options](#miscellaneous-options)
+* [Editor Options](#editor-options)
 * [Roundup](#roundup)
 
 ## Requirements
@@ -143,7 +143,7 @@ For more details see [Sysex Backup and Restore](#sysex-backup-and-restore)
 
 #### UI Colour Settings and Editor Options
 
-At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)
+At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. There are also several editing options you can set here. More details under [Changing the UI Colours](#changing-the-ui-colours) and [Editor Options](#editor-options)
 
 <p align="center">
   <img src="img/UI Colors and Options.png"/>
@@ -578,7 +578,7 @@ On the right are four sliders, H (hue), S (saturation), L (lightness) and A (bac
   <img src="img/Colour 3.png" width="300"/>
 </p>
 
-## Miscellaneous Options
+## Editor Options
 
 <p align="center">
   <img src="img/Options.png" width="480"/>

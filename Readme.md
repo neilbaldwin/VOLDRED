@@ -307,7 +307,7 @@ Until that time, VOLDRED has an option in [Editor Settings](#editor-options) - `
 What this does is add an invisible overlay over the Radial controls to enable you to control the Radials by moving your finger vertically on them. Look at this image of the Oscillator Level control. I've made the overlays visible so I can explain the details:
 
 <p align="center">
-  <img src="img/Radial Overlays.png"/>
+  <img src="img/Radial Overlays.png" width="400"/>
 </p>
 
 

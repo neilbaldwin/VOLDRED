@@ -141,12 +141,12 @@ Below Copy Parts are the two controls for exporting and importing your Kit data 
 
 For more details see [Sysex Backup and Restore](#sysex-backup-and-restore)
 
-#### UI Colour Settings
+#### UI Colour Settings and Editor Options
 
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)
 
 <p align="center">
-  <img src="img/UI Colours.png" width="400"/>
+  <img src="img/UI Colors and Options.png" width="400"/>
 </p>
 
 ## Setting Up and Getting Started
@@ -196,7 +196,7 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 >[!important]
 >**Absolute and Relative Layer Editing**
 >
-> There are two different modes of the linked Layer editing, **Absolute** and **Relative**.
+> There are two different modes of the linked Layer editing, **Absolute** and **Relative**
 > 
 > **Absolute Layer Editing**
 > 

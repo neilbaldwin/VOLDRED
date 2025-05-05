@@ -270,6 +270,9 @@ This is to enable or disable the Volca's pitch quantisation (QPI). When disabled
 
 In Korg's wisdom they gave us just one Pitch Q control per Part so if you enable/disable it in one Layer, it's also enabled/disabled in the other Layer as a visual reminder that Pitch Q affects both Layers.
 
+>[!tip]
+>When you touch or move a control, it's name will be temporarily replaced with the current value of that control. If you have Pitch Quantization enabled (QPI) then the PITCH slider will display the current MIDI note instead of a numerical value.
+
 ### Reloading Part
 
 <p align="center">

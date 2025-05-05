@@ -173,7 +173,7 @@ Load VOLDRED into Touch OSC and in the Connections window make sure you have a M
 The parameters in Layer 1 and Layer 2 should be pretty obvious as they correspond to the same settings/controls on the Volca Drum hardware.
 
 >[!tip]
->When you touch or move a control, it's name will be temporarily replaced with the current value of that control.
+>When you touch or move a control, it's name will be temporarily replaced with the current value of that control. If you have Pitch Quantization enabled (QPI) then the PITCH slider will display the current MIDI note instead of a numerical value.
 
 >[!tip]
 >Instead of having to use the Select knob on the Volca to scroll through all the combinations of *Oscillator Shape*, *Modulation Type* and *Envelope Shape*, you can just use the individual radio buttons to change those parameters directly!
@@ -307,9 +307,12 @@ Until that time, VOLDRED has an option in [Editor Settings](#editor-options) - `
 What this does is add an invisible overlay over the Radial controls to enable you to control the Radials by moving your finger vertically on them. Look at this image of the Oscillator Level control. I've made the overlays visible so I can explain the details:
 
 <p align="center">
-  <img src="img/Radial Overlays.png" width="400"/>
+  <img src="img/Radial Overlays.png" width="300"/>
 </p>
 
+When the Radial overlay are enabled, you touch the control and move your finger up or down: up increases the Radial value and down decreases it. You can see that the overlay is split into two halves. The right side is for fast/large parameter changes while the left side gives you finer, more precise control.
+
+This is the same for all of the smaller Radial controls too (FX, Waveguide) and also applies to the Macro Radials though on the Macro Radials there is only one overlay. I did this as I feel the Macro controls are more aligned with performance rather than preceise editing: there's already plenty other ways to edit the Part parameters if you want precision.
 
 ## Controller Window
 
@@ -608,6 +611,11 @@ By default, the position you tap on the pads and keys in the keyboard window det
 
 #### Radial/Fader Relative Response
 This option switches between the two response modes of the Touch OSC controls. The default is absolute which will set the current value of the control to wherever you touch it. In relative mode you can click/touch anywhere on the control and the value won't change until you drag your finger/mouse. Just an editing preference really.
+
+#### Extended Radial Control
+This option turns on the invisible overlays for all of the Radial-style controls so that you can use your finger to swip up or down to change the value rather than having to rotate your finger around the Radial. The overlay is split into two halves: the right side gives you faster/coarser control while the left side allows you finer and more precise control.
+
+This also applies to the Macro Radial controls though there is only a single overlay for these as the Macro window is more of a performance feature rather than something you'd use for finer editing.
 
 #### Mute MIDI When Mapping
 When you're setting the control range for macro mapping, by default the control you're adding to the macro map will send out MIDI data to your Volca just as if you were using the control normally. Sometimes this is handy but sometimes you might want to *silently* set the macro range. Turn this on and when you're setting the range, the control you're mapping won't send out MIDI data. Note this is only while mapping is active. MIDI function will be resumed if either the Macro window is closed or none of the six macro controls are in mapping mode.

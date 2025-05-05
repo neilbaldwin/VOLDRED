@@ -577,7 +577,7 @@ Go to Sysex Librarian, select a previously exported Kit file and click on the Pl
 ## Changing the UI Colours
 
 <p align="center">
-  <img src="img/UI Colours.png" height="480"/>
+  <img src="img/UI Colours.png" height="320"/>
 </p>
 
 On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLDRED.

@@ -49,7 +49,6 @@ VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
 * * [Macros](#macro-controls)
 * * * [Macro Control Anatomy](#macro-control)
 * * * [Mapping Controls To A Macro](#mapping-parameters-to-macro-controls)
-* * [Moving The Pads/Keyboard Window](#wait-theres-more)
 * [Loading and Saving Kits](#loading-and-saving-kits)
 * * [How To Load and Save](#how-to-load-and-save-in-voldred)
 * * [Switch Kits Via MIDI](#switching-kits-via-midi)
@@ -298,6 +297,19 @@ Both Layers in a Part share the parameters in the FX section. These are *Pan*, *
 Similar to Volca Drum FX parameters, there is only one Waveguide section which is shared by all Parts, though each Part does have its own independent Send that controls how much of the output of each Part is sent to the Waveguide processor.
 
 The Waveguide is shown on each Part's display but if you change any of the Waveguide parameters on a Part page it applies to all Parts. I'm sure you know this as a Volca Drum user but it's worth reinforcing here as each Part might seem to have its own set of Waveguide parameters: they don't but I display the Waveguide in each Part for editing convenience.
+
+### Alternative Radial Control
+
+As much as I :heart_eyes: Touch OSC, I've never been a fan of the fact that the only way to move the Radial control is to rotate your touch around it. Often I find that awkward and wish there was an option to enable you to just touch and move your finger vertically (or horizontally) to change the value.
+
+Until that time, VOLDRED has an option in [Editor Settings](#editor-options) - `Extendad Radial control?`
+
+What this does is add an invisible overlay over the Radial controls to enable you to control the Radials by moving your finger vertically on them. Look at this image of the Oscillator Level control. I've made the overlays visible so I can explain the details:
+
+<p align="center">
+  <img src="img/Radial Overlays.png"/>
+</p>
+
 
 ## Controller Window
 

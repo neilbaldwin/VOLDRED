@@ -146,7 +146,7 @@ For more details see [Sysex Backup and Restore](#sysex-backup-and-restore)
 At the bottom left is where you can change the hue, saturation, lightness of the UI colour scheme. You can also change the alpha of the UI background colour. More details under [Changing the UI Colours](#changing-the-ui-colours)
 
 <p align="center">
-  <img src="img/UI Colors and Options.png" width="400"/>
+  <img src="img/UI Colors and Options.png"/>
 </p>
 
 ## Setting Up and Getting Started

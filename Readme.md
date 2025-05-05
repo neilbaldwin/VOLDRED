@@ -582,9 +582,7 @@ Go to Sysex Librarian, select a previously exported Kit file and click on the Pl
 
 On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLDRED.
 
-The section on the left, `UI ELEMENTS`, is just a bunch of dummy objects so you can see how the colour changes affect different aspects of the VOLDRED UI.
-
-On the right are four sliders, H (hue), S (saturation), L (lightness) and A (background alpha). Slide these around until you get your perfect colour scheme!
+There are four sliders: H (hue), S (saturation), L (lightness) and A (background alpha). Slide these around until you get your perfect colour scheme!
 
 <p align="center">
   <img src="img/Colour 1.png" width="300"/>
@@ -604,7 +602,7 @@ On the right are four sliders, H (hue), S (saturation), L (lightness) and A (bac
   <img src="img/Options.png" width="480"/>
 </p>
 
-These may change in future updates (added to) but currently there's just four options:
+These may be changed or expanded in the future but for now these are the Editor Options:
 
 #### Load Kit 01 at Launch
 A convenience option to have VOLDRED send the kit in slot 01 to your Volca Drum when you run VOLDRED.

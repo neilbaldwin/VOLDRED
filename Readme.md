@@ -152,7 +152,7 @@ At the bottom left is where you can change the hue, saturation, lightness of the
 
 Load VOLDRED into Touch OSC and in the Connections window make sure you have a MIDI output configured to send MIDI to your Volca Drum. VOLDRED sends all of the parameter changes via MIDI messages (from the Lua scripting). It does not use OSC.
 
->[!tip]
+>[!important]
 >By default, VOLDRED sends MIDI to your Volca on MIDI Connection #1 (Touch OSC setup). By default it uses MIDI Connection #2 (Touch OSC setup) to send and receive sysex Kit data.
 
 >[!important]
@@ -180,17 +180,17 @@ The parameters in Layer 1 and Layer 2 should be pretty obvious as they correspon
 
 The cluster of buttons below Oscillator Level won't be so obvious. They control the editing mode and also options for randomisation and initialisation of parameters.
 
-#### Layers: Linked Editing
+### Layers: Linked Editing
 
 The default editing mode lets you edit each Layer independently. However the Layers can be *linked* while editing meaning when you change parameters on one Layer, the parameter(s) on the other Layer will also be affected.
 
-To enable linked editing tap on the LINK icon to the right of the Layer name. It will turn red when active.
+To enable linked editing tap on the `LINK` icon to the right of the Layer name. It will turn red when active.
 
 <p align="center">
   <img src="img/Link.png" height="150"/>
 </p>
 
-Depending on the state of each LINK button, linked editing behaves in two slightly different ways:
+Depending on the state of each `LINK` button, linked editing behaves in two slightly different ways:
 
 >[!important]
 >**Absolute and Relative Layer Editing**
@@ -209,14 +209,14 @@ Depending on the state of each LINK button, linked editing behaves in two slight
 > 
 > Any changes you make to the Layer that has LINK enabled will affect the other layer but instead of setting the parameter of both Layers to the same value, in this mode the relative numerical relationship between the two layers' parameters is maintained for as long as you're touching the control. See below for an example.
 > 
-> Also when only one Layer Link button is active, the Layer that doesn't have LINK enabled will not affect then other Layer when you change its parameters.
+> Also when only one Layer Link button is active, the Layer that doesn't have `LINK` enabled will not affect then other Layer when you change its parameters.
 
 *Absolute Layer Editing* should be fairly familiar as it behaves in the same way as editing the two Layers simultaneously on the VD (Layer 1+2 mode). However *Relative Layer Editing* might not be so obvious:
 
 >[!tip]
 >**Relative Layer Editing**
 >
->Let's say  Layer 1 Level is set to 100 and Layer 2 Level is set to 50. If you enable the LINK button on Layer 1 (and LINK on Layer 2 is disabled) then you'll be editing in *Relative Mode*.
+>Let's say  Layer 1 Level is set to 100 and Layer 2 Level is set to 50. If you enable the `LINK` button on Layer 1 (and LINK on Layer 2 is disabled) then you'll be editing in *Relative Mode*.
 >
 >Now move Layer 1 Level control to 75. You'll see that instead of Layer 2 Level also being set to  75, instead it has moved to 25: maintaining the original relationship between the level of each Layer.
 >
@@ -260,7 +260,7 @@ Here, *Modulation Type* is unlocked while *Amount* and *Rate* are locked.
 
 ### PITCH and Q
 
-You'll notice above the slider that controls Oscillator Pitch, there is a toggle button labelled "Q"
+You'll notice above the slider that controls Oscillator Pitch, there is a toggle button labelled `Q`
 
 <p align="center">
   <img src="img/Pitch Q.png" height="150"/>
@@ -294,7 +294,7 @@ Tapping the circle-arrow button at the top-left just underneath the Part selecto
 </p>
 
 #### FX
-Both Layers in a Part share the parameters in the FX section. These are *Pan*, *Bit Crush*, *Fold*, *Drive*, *Dry Gain* and *Send* (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
+Both Layers in a Part share the parameters in the FX section. These are `PAN`, `BIT` (crush), `FOLD`, `DRIVE`, `DRY` (gain) and `SEND` (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
 
 #### Waveguide
 Similar to Volca Drum FX parameters, there is only one Waveguide section which is shared by all Parts, though each Part does have its own independent Send that controls how much of the output of each Part is sent to the Waveguide processor.
@@ -330,7 +330,7 @@ The window is a multi-function window so its appearance will depend on the last 
 
 ![](<img/Drum Pads.png>)
 
-In this mode, tapping on each of the pads, P-1 to P-6 will trigger the sound on those Parts (tracks) on the Volca Drum.
+In this mode, tapping on each of the pads, `P-1` to `P-6` will trigger the sound on those Parts (tracks) on the Volca Drum.
 
 Velocity is mapped to the position you tap on the pad: maximum velocity is in the middle and it reduces the closer to the edge of the pad you tap.
 
@@ -357,13 +357,13 @@ The *keyboard* is just over 1 octave of touch pads (16 in total) starting at C a
 >[!tip]
 >Remember that the Volca Drum has two pitch modes: unquantised and quantised. To get proper musical semi-tone intervals on the keyboard you need to be in quantised mode by enabling the Q button above the Pitch slider. You can use the keyboard in either mode though, of course.
 
-#### TRG (trigger)
+#### `TRG` (trigger)
 This toggle-button controls whether the current Part is triggered as you tap the keys on the keyboard. Handy if you're modifying a Part with the sequencer running, for example, so that you can use the keyboard to change the pitch without repeatedly triggering the sound.
 
-#### OCT (octave)
+#### `OCT` (octave)
 You can change the current octave of the keyboard. The current octave is displayed on the two "C" keys.
 
-#### LYR (layer)
+#### `LYR` (layer)
 This radio-button toggles the target Layer between Layer 1 and Layer 2.  You might only want to affect the pitch of a single Layer so this is how you do it.
 
 >[!tip]
@@ -407,10 +407,10 @@ First thing, get to know the controls of a Macro Control. Each of the 6 Macro Co
 ##### Macro Dial
 The dial in the center is what controls the output of the Macro Control. Once parameters are assigned to it, rotating the control will send values to the mapped parameters.
 
-##### Mapping Button (+)
+##### Mapping Button `+`
 Tap this button to enable mapping for this Macro. When in mapping mode the Macro name (M1 in this case) will flash as a *warning* that you are in Mapping Mode. More on this below.
 
-##### Clear Button (X)
+##### Clear Button `X`
 This simply clears any mapping from the Macro.
 
 ##### Mapped Controls Indicator
@@ -426,11 +426,11 @@ Here's where it gets a little weird. Weird is good.
 >[!TIP]
 >Let's start off simple. We'll map the Oscillator Level (Part 1, Layer 1) to Macro Control M1. Have Part 1 selected and open the Controller Window and switch to Macros.
 >
->* First click/press the X on Macro M1 to clear any previous mapping. If the Dial Mode button is on (the diamond button at the top-right), turn it off for the time being
->* Then click/press the + button on Macro Control M1 to enable mapping. M1 will start flashing to tell you that you are in mapping mode.
+>* First click/press the `X` on Macro M1 to clear any previous mapping. If the Dial Mode button is on (the diamond button at the top-right), turn it off for the time being
+>* Then click/press the `+` button on Macro Control M1 to enable mapping. `M1` will start flashing to tell you that you are in mapping mode.
 >* Now we will define the *range* of how the Macro Dial affects the Oscillator Level by moving the Level control between two points. Click somewhere near the bottom and move the control to somewhere near the top of it's range. M1 will momentarily flash to tell you that the mapping has been registered
 >* Now try moving the Macro Dial and you will see Oscillator Level move through the range you just defined. The range you defined is scaled over the full range of the Macro Dial
->* This also works in both directions. For simplicity, tap the + button to stop mapping and then the X button to clear the mapping you just made
+>* This also works in both directions. For simplicity, tap the `+` button to stop mapping and then the `X` button to clear the mapping you just made
 >* Now move the Oscillator Level to maximum. Re-engage mapping on M1 and this time tap-and-drag the Oscillator Level from maximum to it's minimum. Again M1 will flash to let you know the mapping was successful
 >* Now when you move the Macro Dial you'll see that Oscillator Level moves in the opposite direction to the Macro Dial
 >* Tap the Dial Mode (diamond) button to turn it on. You'll see that the Macro Dial snaps back to zero. Move the Macro Dial and let it go to see the behaviour in this mode.
@@ -538,7 +538,7 @@ As mentioned above, you'll need some sort of sysex librarian/tool software/app t
 
 #### Sysex Sending
 
-On Sysex Librarian you have to click on "Record One" to engage receiving. Once it's waiting for sysex data, go to VOLDRED and tap on the `[SEND]` button:
+On Sysex Librarian you have to click on "Record One" to engage receiving. Once it's waiting for sysex data, go to VOLDRED and tap on the `SEND` button:
 
 ![](<img/Sysex.png>)
 
@@ -546,14 +546,14 @@ Your Kit data will be sent to Sysex Librarian and the file will appear in the ap
 
 #### Sysex Receiving
 
-To import a sysex Kit you first need to engage the `[RECEIVE]` button. When VOLDRED is waiting for sysex data the receive button will be coloured red.
+To import a sysex Kit you first need to engage the `RECEIVE` button. When VOLDRED is waiting for sysex data the receive button will be coloured red.
 
 ![](<img/Sysex Receive.png>)
 
 Go to Sysex Librarian, select a previously exported Kit file and click on the Play button (or double-click the file in the library list). The sysex data will be received by VOLDRED and then decoded into the 16 kit slots.
 
 >[!note]
->After importing via sysex, no Kit is 'loaded' to the editor or your Volca so you need to click on one of the Kit Slot to actually load a Kit and send it to your Volca.
+>After importing via sysex, no Kit is 'loaded' to the editor or sent to your Volca so you need to click on one of the Kit Slot to actually load a Kit and send it to your Volca.
 
 >[!important]
 >At the date of writing this I haven't found a way to send and receive sysex data from VOLDRED on iPad to another app running on the iPad. I've tried a few but none seem to work.
@@ -604,21 +604,21 @@ There are four sliders: H (hue), S (saturation), L (lightness) and A (background
 
 These may be changed or expanded in the future but for now these are the Editor Options:
 
-#### Load Kit 01 at Launch
+#### `Load Kit 01 at Launch`
 A convenience option to have VOLDRED send the kit in slot 01 to your Volca Drum when you run VOLDRED.
 
-#### Pads/Keys Fixed MIDI Velocity
+#### `Pads/Keys Fixed MIDI Velocity`
 By default, the position you tap on the pads and keys in the keyboard window determines the MIDI velocity of the triggered sound. If you'd rather this didn't happen you can have the velocity fixed.
 
-#### Radial/Fader Relative Response
+#### `Radial/Fader Relative Response`
 This option switches between the two response modes of the Touch OSC controls. The default is absolute which will set the current value of the control to wherever you touch it. In relative mode you can click/touch anywhere on the control and the value won't change until you drag your finger/mouse. Just an editing preference really.
 
-#### Extended Radial Control
+#### `Extended Radial Control`
 This option turns on the invisible overlays for all of the Radial-style controls so that you can use your finger to swip up or down to change the value rather than having to rotate your finger around the Radial. The overlay is split into two halves: the right side gives you faster/coarser control while the left side allows you finer and more precise control.
 
 This also applies to the Macro Radial controls though there is only a single overlay for these as the Macro window is more of a performance feature rather than something you'd use for finer editing.
 
-#### Mute MIDI When Mapping
+#### `Mute MIDI When Mapping`
 When you're setting the control range for macro mapping, by default the control you're adding to the macro map will send out MIDI data to your Volca just as if you were using the control normally. Sometimes this is handy but sometimes you might want to *silently* set the macro range. Turn this on and when you're setting the range, the control you're mapping won't send out MIDI data. Note this is only while mapping is active. MIDI function will be resumed if either the Macro window is closed or none of the six macro controls are in mapping mode.
 
 ## Roundup

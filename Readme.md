@@ -287,21 +287,21 @@ Tapping the circle-arrow button at the top-left just underneath the Part selecto
 >[!tip]
 >See [Loading and Saving Kits](#loading-and-saving-kits) for explanation of how to load and save kits in VOLDRED.
 
-## FX and Waveguide
+## Part FX and Waveguide
 
 <p align="center">
   <img src="img/FX and Waveguide.png" width="160"/>
 </p>
 
-#### FX
+### FX
 Both Layers in a Part share the parameters in the FX section. These are `PAN`, `BIT` (crush), `FOLD`, `DRIVE`, `DRY` (gain) and `SEND` (Send is the send amount to the Waveguide). I don't think there's anything more to say about FX.
 
-#### Waveguide
+### Waveguide
 Similar to Volca Drum FX parameters, there is only one Waveguide section which is shared by all Parts, though each Part does have its own independent Send that controls how much of the output of each Part is sent to the Waveguide processor.
 
 The Waveguide is shown on each Part's display but if you change any of the Waveguide parameters on a Part page it applies to all Parts. I'm sure you know this as a Volca Drum user but it's worth reinforcing here as each Part might seem to have its own set of Waveguide parameters: they don't but I display the Waveguide in each Part for editing convenience.
 
-### Alternative Radial Control
+## Alternative Radial Control
 
 As much as I :heart_eyes: Touch OSC, I've never been a fan of the fact that the only way to move the Radial control is to rotate your touch around it. Often I find that awkward and wish there was an option to enable you to just touch and move your finger vertically (or horizontally) to change the value.
 
@@ -510,10 +510,10 @@ It should be obvious but you can select any combination of `L1`, `L2` and `FX` t
 
 ![](<img/Sysex.png>)
 
+As well as storing the 16 kits inside of the the .TOSC file when you save it, I recently added the ability to export and import Kit data from VOLDRED!
+
 >[!warning]
 >The sysex features are a relatively new addition to VOLDRED and have only received minimal testing and usage. Nothing should really *break* but...you know...
-
-As well as storing the 16 kits inside of the the .TOSC file when you save it, I recently added the ability to export and import Kit data from VOLDRED!
 
 ### Sysex Setup
 

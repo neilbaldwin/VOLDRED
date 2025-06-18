@@ -602,6 +602,8 @@ There are four sliders: H (hue), S (saturation), L (lightness) and A (background
   <img src="img/Options.png" width="480"/>
 </p>
 
+![](<img/Options.png>)
+
 These may be changed or expanded in the future but for now these are the Editor Options:
 
 #### `Load Kit 01 at Launch`

@@ -586,9 +586,9 @@ There are four sliders: H (hue), S (saturation), L (lightness) and A (background
 
 ### Setting Individual Colors for Parts
 
-The column of toggle-buttons to the right select which colors you'll be modifiying when you move the HSL sliders. By default they are all on meaning whatever color you set will be applied to all Parts, Waveguide, Controller etc.
+The column of toggle-buttons to the right select which colors you'll be modifiying when you move the HSL sliders. By default they are all on, meaning whatever color you set will be applied to all Parts, Waveguide, Controller etc.
 
-If you want to set an individual color for a Part, for example, uncheck all of the toggle-buttons and only turn on the Part you want to change the color of. Now when you move the HSL sliders only that Part will have it's color changed.
+If you want to set an individual color for a Part, for example, uncheck all of the toggle-buttons and only turn on the Part you want to change the color of. Now when you move the HSL sliders only that Part will have its color changed.
 
 `P1` - `P6` should be very obvious. `UI` applies to the Settings tab, the Waveguide and the Controller overlay though there is also an option in Options to have the color of the Waveguide and Controller overlay follow the currently selected Part tab.
 

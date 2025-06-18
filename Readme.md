@@ -584,6 +584,14 @@ On the `SETTINGS` tab you can completely alter the entire colour scheme for VOLD
 
 There are four sliders: H (hue), S (saturation), L (lightness) and A (background alpha). Slide these around until you get your perfect colour scheme!
 
+### Setting Individual Colors for Parts
+
+The column of toggle-buttons to the right select which colors you'll be modifiying when you move the HSL sliders. By default they are all on meaning whatever color you set will be applied to all Parts, Waveguide, Controller etc.
+
+If you want to set an individual color for a Part, for example, uncheck all of the toggle-buttons and only turn on the Part you want to change the color of. Now when you move the HSL sliders only that Part will have it's color changed.
+
+`P1` - `P6` should be very obvious. `UI` applies to the Settings tab, the Waveguide and the Controller overlay though there is also an option in Options to have the color of the Waveguide and Controller overlay follow the currently selected Part tab.
+
 <p align="center">
   <img src="img/Colour 1.png" width="400"/>
 </p>
@@ -619,7 +627,7 @@ This also applies to the Macro Radial controls though there is only a single ove
 #### `Mute MIDI When Mapping`
 When you're setting the control range for macro mapping, by default the control you're adding to the macro map will send out MIDI data to your Volca just as if you were using the control normally. Sometimes this is handy but sometimes you might want to *silently* set the macro range. Turn this on and when you're setting the range, the control you're mapping won't send out MIDI data. Note this is only while mapping is active. MIDI function will be resumed if either the Macro window is closed or none of the six macro controls are in mapping mode.
 
-#### 'WG/Controller Color Follow Parts'
+#### `WG/Controller Color Follow Parts`
 Adding the option to set individual colors for the Parts threw up a couple of consistency issues. This is because the Waveguide is common to all parts, as is the Controller Overlay (Keys/Pads/Macros). This option is to decide what to do with those elements.
 
 When this option is off, the Waveguide and Controller use the same colors as the Settings tab (UI in the color options). When this setting is on, the Waveguide and Controller will change color depending on the color of the currently selected Part tab.

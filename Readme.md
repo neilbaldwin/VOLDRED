@@ -598,10 +598,6 @@ There are four sliders: H (hue), S (saturation), L (lightness) and A (background
 
 ## Editor Options
 
-<p align="center">
-  <img src="img/Options.png" width="480"/>
-</p>
-
 ![](<img/Options.png>)
 
 These may be changed or expanded in the future but for now these are the Editor Options:
@@ -622,6 +618,11 @@ This also applies to the Macro Radial controls though there is only a single ove
 
 #### `Mute MIDI When Mapping`
 When you're setting the control range for macro mapping, by default the control you're adding to the macro map will send out MIDI data to your Volca just as if you were using the control normally. Sometimes this is handy but sometimes you might want to *silently* set the macro range. Turn this on and when you're setting the range, the control you're mapping won't send out MIDI data. Note this is only while mapping is active. MIDI function will be resumed if either the Macro window is closed or none of the six macro controls are in mapping mode.
+
+#### 'WG/Controller Color Follow Parts'
+Adding the option to set individual colors for the Parts threw up a couple of consistency issues. This is because the Waveguide is common to all parts, as is the Controller Overlay (Keys/Pads/Macros). This option is to decide what to do with those elements.
+
+When this option is off, the Waveguide and Controller use the same colors as the Settings tab (UI in the color options). When this setting is on, the Waveguide and Controller will change color depending on the color of the currently selected Part tab.
 
 ## Roundup
 

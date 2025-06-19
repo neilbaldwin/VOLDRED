@@ -23,6 +23,8 @@ VOLDRED pours petrol on that, sets it on fire then walks away in slow-motion.
 * Super-flexible mappable Macro knobs - control almost every parameter with one knob!
 * Customisable colour-scheme!
 
+![Video](https://www.youtube.com/watch?v=bLU6VD3ehyk)
+
 ## Index
 
 * [Requirements](#requirements)

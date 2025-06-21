@@ -6,7 +6,7 @@ VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and 
 
 ## Support My Work
 
-If you like my work and use it or learn from it, please consider supporting me or just a donation to say thanks:
+A huge amount of work went into Voldred and I resisted the option to force other users to pay for access. However, if you like my work and use it or even learn from it, please consider supporting me or just making a small donation to say thanks. I have quite a few new features and improvements in the pipeline for Voldred and knowing it's appreciated is the best inspiration for working on it further.
 
 <a href="https://www.buymeacoffee.com/neilbaldwi3" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;" ></a>
 

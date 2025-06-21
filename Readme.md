@@ -4,6 +4,14 @@ VOLDRED is a Touch OSC editor for the Korg Volca Drum. It adds power, speed and 
 
 ![](img/VOLDRED.png)
 
+## Support My Work
+
+If you like my work and use it or learn from it, please consider supporting me or just a donation to say thanks:
+
+<a href="https://www.buymeacoffee.com/neilbaldwi3" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;" ></a>
+
+:pray:
+
 ## Why Do I Need VOLDRED?
 
 Let's face it, sound editing on the Volca Drum is *fiddly*. No offence, Korg. Too much menu diving, too much cycling between Parts. Too much damn scrolling through the oscillator/modulation/envelope combinations to dial in the configuration you want. And trying to do all of this via the tiny knobs and tiny screen. *Fiddly*.
@@ -649,3 +657,12 @@ Due to the nature of Touch OSC files and the Lua scripting you can freely poke a
 If you've any questions or issues or suggestions, drop me a line at info@marmotaudio.co.uk
 
 Neil
+
+## Support My Work (just in case you missed it at the top)
+
+If you like my work and use it or learn from it, please consider supporting me or just a donation to say thanks:
+
+<a href="https://www.buymeacoffee.com/neilbaldwi3" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;" ></a>
+
+:pray:
+
